@@ -53,5 +53,6 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  root to: redirect("/kickstarter")
   get "kickstarter", to: "landing#kickstarter", as: "kickstarter"
 end
