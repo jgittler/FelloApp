@@ -55,4 +55,6 @@ Rails.application.routes.draw do
   #   end
   root to: redirect("/kickstarter")
   get "kickstarter", to: "landing#kickstarter", as: "kickstarter"
+
+  get "sitemap.xml", to: "sitemap#show", format: "xml", as: "sitemap"
 end
