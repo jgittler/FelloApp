@@ -1,4 +1,4 @@
 class LandingController < ApplicationController
-  def home
+  def kickstarter
   end
 end
