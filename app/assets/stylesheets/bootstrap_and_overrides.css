@@ -1,0 +1,21 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+.navbar {
+  min-height: 65px;
+}
+
+.navbar-brand {
+  font-size: 35px;
+  line-height: 35px;
+  padding: 15 15px;
+}
+
+.navbar-nav > li > a {
+  font-size: 20px;
+  padding-top: 20px;
+}
