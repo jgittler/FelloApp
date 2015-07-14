@@ -10,9 +10,7 @@
 }
 
 .navbar-brand {
-  font-size: 35px;
-  line-height: 35px;
-  padding: 15 15px;
+  padding: 3px 15px;
 }
 
 .navbar-nav > li > a {
