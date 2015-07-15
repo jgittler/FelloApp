@@ -23,6 +23,10 @@ body {
   background-size: cover;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .no-pad {
   padding: 0;
 }
@@ -69,29 +73,6 @@ body {
 
   img {
     border: black solid 1px;
-  }
-}
-
-.caption {
-  position: absolute;
-  top: 100%;
-
-  h1 {
-    opacity: 0.95;
-
-    @media (max-width: 768px) {
-      margin-top: -10%;
-      font-size: 18px;
-    }
-
-    a {
-      color: #344C8A;
-
-      &:hover, &:link, &:active, &:visited {
-        text-decoration: none;
-        color: #344C8A;
-      }
-    }
   }
 }
 
