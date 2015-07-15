@@ -1,9 +1,9 @@
 .break {
-  height: 35px;
-  margin-bottom: 50px;
+  height: 30px;
+  margin-bottom: 40px;
 
   @media (max-width: 1265px) {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 }
 
@@ -56,9 +56,14 @@
   a {
     color: #344C8A;
 
-    &:hover, &:link, &:active, &:visited {
+    &:link, &:visited {
       text-decoration: none;
       color: #344C8A;
+    }
+
+    &:hover, &:active {
+      text-decoration: none;
+      color: #344CFA;
     }
   }
 }
