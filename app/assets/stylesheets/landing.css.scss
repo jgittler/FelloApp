@@ -4,11 +4,18 @@
 
   @media (max-width: 1265px) {
     margin-bottom: 5px;
+    height: 10px;
   }
 }
 
 .main-text {
+  font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
   line-height: 1.5;
+  color: black !important;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .under-drop {
@@ -44,12 +51,11 @@
 }
 
 .call-to-action {
-  position: absolute;
-  top: 85%;
-    
+  margin-top: -115px;
+
   @media (max-width: 1265px) {
-    position: relative;
     text-align: center;
+    margin-top: 0px;
   }
 
   a {
