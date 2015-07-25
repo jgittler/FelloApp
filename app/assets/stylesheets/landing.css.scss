@@ -11,7 +11,6 @@
 .main-text {
   font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
   line-height: 1.5;
-  color: black !important;
 
   @media (max-width: 768px) {
     text-align: center;
@@ -51,24 +50,27 @@
 }
 
 .call-to-action {
-  margin-top: -115px;
+  position: absolute;
+  z-index: 1;
+  margin-top: 75px;
+  color: white;
+  text-align: center;
 
   @media (max-width: 1265px) {
-    text-align: center;
     margin-top: 0px;
   }
 
   a {
-    color: #344C8A;
+    color: #344CFA;
 
     &:link, &:visited {
       text-decoration: none;
-      color: #344C8A;
+      color: #344CFA;
     }
 
     &:hover, &:active {
       text-decoration: none;
-      color: #344CFA;
+      color: #344C8A;
     }
   }
 }
