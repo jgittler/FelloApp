@@ -38,4 +38,5 @@ body {
 
 .navbar-default .navbar-nav >li > a {
   color: black;
+  text-align: inherit;
 }
