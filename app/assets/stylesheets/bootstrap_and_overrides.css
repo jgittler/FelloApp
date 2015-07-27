@@ -9,6 +9,14 @@
   min-height: 65px;
 }
 
+.thumbnail  {
+  padding: 0;
+
+  img {
+    margin: 0;
+  }
+}
+
 .navbar-brand {
   padding: 3px 15px;
 }
@@ -19,5 +27,15 @@
 }
 
 body {
+  color: black;
+}
+
+.panel-default > .panel-heading {
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.navbar-default .navbar-nav >li > a {
   color: black;
 }

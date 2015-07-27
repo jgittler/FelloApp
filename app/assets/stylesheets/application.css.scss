@@ -45,6 +45,15 @@ body {
   -webkit-border-radius: 0;
 }
 
+.thumbnail {
+  background-color: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  img {
+    width: 100%;
+  }
+}
+
 .navbar-center {
   position: relative;
   left: 50%;
@@ -58,6 +67,7 @@ body {
 
 .fello-text {
   font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  color: inherit;
 }
 
 .nav-container {
@@ -65,14 +75,6 @@ body {
   padding-top: 5px;
   padding-left: 35px;
   padding-right: 35px;
-}
-
-.thumbnail.no-border {
-  background-color: inherit;
-
-  img {
-    border: black solid 1px;
-  }
 }
 
 .logo img {
