@@ -1,3 +1,24 @@
+.card .panel-body {
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out; 
+    outline: 5px solid white;
+
+    &.top {
+
+      &:hover {
+        opacity: 0;
+      }
+    }
+  }
+}
+
 .break {
   height: 15px;
   margin-bottom: 20px;
@@ -12,24 +33,42 @@
   font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
   line-height: 1.5;
 
-  @media (max-width: 768px) {
+  @media (max-width: 968px) {
     text-align: center;
     line-height: 1.2;
   }
 }
 
-@media (max-width: 768px) {
-  .center-text {
+.center-text {
+  @media (max-width: 768px) {
     margin-top: 0;
     font-size: 20px;
+  }
+
+  @media (max-width: 1230px) {
+    line-height: 1.2;
   }
 }
 
 .sub-main {
   text-align: left;
 
+  @media (max-width: 992px) {
+    line-height: 1.2;
+  }
+
   @media (max-width: 768px) {
     font-size: 20px;
+    text-align: center;
+    padding-top: 340px;
+  }
+
+  @media (max-width: 550px) {
+    padding-top: 250px;
+  }
+
+  @media (max-width: 400px) {
+    padding-top: 200px;
   }
 }
 
@@ -129,6 +168,15 @@
 
       h2 {
         font-size: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    .panel-heading {
+
+      h2 {
+        font-size: 10px;
       }
     }
   }
