@@ -88,10 +88,53 @@ body {
   }
 }
 
+.navbar-right {
+
+  .main-text {
+    font-size: 24px;
+  }
+}
+
 .navbar-center > li > a {
   @media (min-width: 768px) {
      display: inline;
      padding-left: 0;
      padding-right: 0;
+  }
+}
+
+.footer {
+  height: 105px;
+  background-color: black;
+  margin-top: 250px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    margin-top: 100px;
+  }
+
+  .row:first-of-type {
+    margin-top: 10px;
+  }
+
+  h5, h4 {
+    color: white;
+    font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+
+    a {
+      color: white;
+      position: relative;
+      top: 20px;
+
+      &:link, &:visited {
+        text-decoration: none;
+        color: white;
+      }
+
+      &:hover, &:active, &:link, &:visited {
+        text-decoration: none;
+        color: white;
+      }
+    }
   }
 }
