@@ -1,64 +1,55 @@
 <div class="caption call-to-action col-xs-12 col-lg-6 col-lg-offset-1">
-  <h1 class="main-text">Help a <%= image_tag 'fello_white.png', alt: 'Fello Eyewear' %> out, share us on <a href="https://www.facebook.com/sharer/sharer.php?u=felloeyewear" target="_blank", alt='Share Fello Eyewear on Facebook'>facebook</a>.</h1>
+  <h1 class="main-text">Help a <%= image_tag 'fello_white.png', alt: 'Fello Eyewear' %> out, share us on <a href="https://www.facebook.com/sharer/sharer.php?u=felloeyewear" target="_blank", title='Share Fello Eyewear on Facebook'>facebook</a>.</h1>
 </div>
+
 <%= image_tag 'fello_wine_country.jpg', alt: 'Fello Wine Country', class: 'col-xs-12 no-pad under-drop' %>
 
-<div class="col-xs-12 break">
+<div class="col-xs-12 no-pad break">
+  <h2 class="main-text">Kickstarter Coming Soon</h2>
 </diV>
 
-<div class="container">
+<%= image_tag 'konvoy_atlas.jpg', alt: 'Tortoise Shell Konvoy Fello Sunglasses', class: "col-xs-12 no-pad under-drop" %>
+
+<div class="col-xs-12 no-pad break">
+  <h2 class="main-text"><%= link_to 'Learn More', story_path, title: 'Learn more about fello eyewear.' %></h2>
+</diV>
+
+<div class="container-fluid">
   <div class="row">
-    <div class='col-xs-12 col-md-9'>
-      <div class="thumbnail">
-        <%= image_tag 'premium_fello.jpg', alt: 'Tortoise Shell Konvoy Fello Sunglasses', class: "under-drop" %>
-      </div>
-    </div>
-
-    <div class="col-xs-12 col-md-3">
-      <h2 class="main-text center-text"><span class="fello-text">Fello</span> sunglasses are crafted in California, using only premium materials, ensuring the highest quality of eyewear. Money can’t buy a better pair.</h2>
-    </div>
-  </div>
-
-
-  <div class="row">
-    <div class='col-xs-4 col-sm-3'>
-      <div class="panel panel-default card col-xs-12 sharp blueprint">
+    <div class='col-xs-12 col-sm-4'>
+      <div class="panel panel-default card sharp blueprint under-drop">
         <div class="panel-heading sharp">
           <div class="panel-title main-text"><h2>Konvoy</h2></div>
         </div>
         <div class="panel-body">
-          <%= image_tag 'fello_eyewear_with_ranger.jpg', alt: 'Fello Eyewear With Ranger And Sasha', class: 'bottom under-drop' %>
+          <%= image_tag 'fello_eyewear_with_ranger.jpg', alt: 'Fello Eyewear At The Golden Gate Bridge', class: 'bottom under-drop' %>
           <%= image_tag 'blueprint_konvoy.jpg', alt: 'Konvoy Designs For Fello Sunglasses', class: 'top under-drop' %>
         </div>
       </div>
     </div>
 
-    <div class='col-xs-4 col-sm-3'>
-      <div class="panel panel-default card col-xs-12 sharp blueprint">
+    <div class='col-xs-12 col-sm-4'>
+      <div class="panel panel-default card sharp blueprint under-drop">
         <div class="panel-heading sharp">
           <div class="panel-title main-text"><h2>Fantom</h2></div>
         </div>
         <div class="panel-body">
-          <%= image_tag 'fantom_coming_soon.jpg', alt: 'Fantom Line Coming Soon', class: 'bottom under-drop' %>
+          <%= image_tag 'coming_soon.jpg', alt: 'Fantom Line Coming Soon', class: 'bottom under-drop' %>
           <%= image_tag 'blueprint_fantom.jpg', alt: 'Fantom Designs For Fello Sunglasses', class: 'top under-drop' %>
         </div>
       </div>
     </div>
 
-    <div class='col-xs-4 col-sm-3'>
-      <div class="panel panel-default card col-xs-12 sharp blueprint">
+    <div class='col-xs-12 col-sm-4'>
+      <div class="panel panel-default card sharp blueprint under-drop">
         <div class="panel-heading sharp">
           <div class="panel-title main-text"><h2>Heron</h2></div>
         </div>
         <div class="panel-body">
-          <%= image_tag 'heron_coming_soon.jpg', alt: 'Heron (Aviator) Designs For Fello Sunglasses', class: 'bottom under-drop' %>
+          <%= image_tag 'coming_soon.jpg', alt: 'Heron (Aviator) Designs For Fello Sunglasses', class: 'bottom under-drop' %>
           <%= image_tag 'blueprint_heron.jpg', alt: 'Heron Line Coming Soon', class: 'top under-drop' %>
         </div>
       </div>
-    </div>
-
-    <div class='col-sm-3'>
-      <h3 class="main-text sub-main">Each <span class="fello-text">fello</span> has been carefully designed to bring you an affordable pair of sunglasses that will last a lifetime.</h4>
     </div>
   </div>
 </div>

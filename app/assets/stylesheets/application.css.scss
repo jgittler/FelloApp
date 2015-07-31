@@ -14,13 +14,10 @@
  *= require_self
  */
 @import "landing.css";
+@import "footer.css";
 
 body { 
-  background: asset-url('body_bg.png') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  color: #E1E1E1;
 }
 
 .text-center {
@@ -28,7 +25,8 @@ body {
 }
 
 .no-pad {
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .no-margin {
@@ -37,21 +35,6 @@ body {
 
 .sharp {
   border-radius: 0;
-}
-
-.no-border {
-  border: 0;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-}
-
-.thumbnail {
-  background-color: inherit;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-
-  img {
-    width: 100%;
-  }
 }
 
 .navbar-center {
@@ -100,41 +83,5 @@ body {
      display: inline;
      padding-left: 0;
      padding-right: 0;
-  }
-}
-
-.footer {
-  height: 105px;
-  background-color: black;
-  margin-top: 250px;
-  width: 100%;
-
-  @media (max-width: 768px) {
-    margin-top: 100px;
-  }
-
-  .row:first-of-type {
-    margin-top: 10px;
-  }
-
-  h5, h4 {
-    color: white;
-    font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
-
-    a {
-      color: white;
-      position: relative;
-      top: 20px;
-
-      &:link, &:visited {
-        text-decoration: none;
-        color: white;
-      }
-
-      &:hover, &:active, &:link, &:visited {
-        text-decoration: none;
-        color: white;
-      }
-    }
   }
 }
