@@ -16,10 +16,6 @@
 @import "landing.css";
 @import "footer.css";
 
-body { 
-  color: #E1E1E1;
-}
-
 .text-center {
   text-align: center;
 }
@@ -35,6 +31,14 @@ body {
 
 .sharp {
   border-radius: 0;
+}
+
+.no-border {
+  border: none;
+}
+
+.text-drop {
+  text-shadow: 0px 2px 2px rgba(165, 165, 165, 0.6);
 }
 
 .navbar-center {

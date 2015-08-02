@@ -5,13 +5,15 @@
 <%= image_tag 'fello_wine_country.jpg', alt: 'Fello Wine Country', class: 'col-xs-12 no-pad under-drop' %>
 
 <div class="col-xs-12 no-pad break">
-  <h2 class="main-text">Kickstarter Coming Soon</h2>
+  <h2 class="main-text text-drop">Kickstarter Coming Soon</h2>
 </diV>
 
 <%= image_tag 'konvoy_atlas.jpg', alt: 'Tortoise Shell Konvoy Fello Sunglasses', class: "col-xs-12 no-pad under-drop" %>
 
-<div class="col-xs-12 no-pad break">
-  <h2 class="main-text"><%= link_to 'Learn More', story_path, title: 'Learn more about fello eyewear.' %></h2>
+<div class="col-xs-12 no-pad break btn-break">
+  <%= link_to story_path, title: 'Learn more about fello eyewear.' do %>
+    <button type="button" class="btn btn-primary btn-lg no-border text-drop main-text">Read Our Story</button>
+  <% end %>
 </diV>
 
 <div class="container-fluid">
