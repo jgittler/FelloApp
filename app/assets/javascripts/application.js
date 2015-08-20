@@ -15,3 +15,18 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
+
+$('.carousel').carousel({
+  interval: false
+}) 
+
+$(document).ready(function(){
+  $("form").on("ajax:success", function(){
+    $(this).find('input[name="email"]').val('');
+    $('.alert').text('Thank You');
+    $('.alert').show();
+    setTimeout(function(){
+      $('.alert').hide();
+    }, 2000);
+  });
+});

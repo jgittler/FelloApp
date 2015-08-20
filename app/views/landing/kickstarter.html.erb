@@ -1,5 +1,17 @@
-<div class="caption call-to-action col-xs-12 col-lg-6 col-lg-offset-1">
-  <h1 class="main-text">Help a <%= image_tag 'fello_white.png', alt: 'Fello Eyewear' %> out, share us on <a href="https://www.facebook.com/sharer/sharer.php?u=felloeyewear" target="_blank", title='Share Fello Eyewear on Facebook'>facebook</a>.</h1>
+<div class="caption call-to-action col-xs-8 col-sm-6 col-xs-offset-1">
+  <h1 class="main-text">
+    <p class="slogan">
+      Help a <%= image_tag 'fello_white.png', alt: 'Fello Eyewear' %> out.
+    </p>
+    Read our
+    <%= link_to "story", kickstarter_path(anchor: "story"), { class: "main-text", title: "Fello Eyewear Story" } %>.
+    <br />
+    <button type="button" class="btn btn-primary btn-lg no-border text-drop">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=felloeyewear" target="_blank", title='Share Fello Eyewear on Facebook'>
+        <p class="share">Share us on facebook.</p>
+      </a>
+    </button>
+  </h1>
 </div>
 
 <%= image_tag 'fello_wine_country.jpg', alt: 'Fello Wine Country', class: 'col-xs-12 no-pad under-drop' %>
@@ -10,48 +22,36 @@
 
 <%= image_tag 'konvoy_atlas.jpg', alt: 'Tortoise Shell Konvoy Fello Sunglasses', class: "col-xs-12 no-pad under-drop" %>
 
-<div class="col-xs-12 no-pad break btn-break">
-  <%= link_to story_path, title: 'Learn more about fello eyewear.' do %>
-    <button type="button" class="btn btn-primary btn-lg no-border text-drop main-text">Read Our Story</button>
-  <% end %>
+<div class="col-xs-12 no-pad break">
+  <h2 class="main-text text-drop">Fello Models</h2>
 </diV>
 
 <div class="container-fluid">
+
   <div class="row">
-    <div class='col-xs-12 col-sm-4'>
-      <div class="panel panel-default card sharp blueprint under-drop">
-        <div class="panel-heading sharp">
-          <div class="panel-title main-text"><h2>Konvoy</h2></div>
-        </div>
-        <div class="panel-body">
-          <%= image_tag 'fello_eyewear_with_ranger.jpg', alt: 'Fello Eyewear At The Golden Gate Bridge', class: 'bottom under-drop' %>
-          <%= image_tag 'blueprint_konvoy.jpg', alt: 'Konvoy Designs For Fello Sunglasses', class: 'top under-drop' %>
-        </div>
-      </div>
+    <div class='col-sm-4'>
+
+      <%= render partial: 'carousel', locals: { one: konvoy_one, two: konvoy_two, pair: "#konvoy" } %>
+
     </div>
 
-    <div class='col-xs-12 col-sm-4'>
-      <div class="panel panel-default card sharp blueprint under-drop">
-        <div class="panel-heading sharp">
-          <div class="panel-title main-text"><h2>Fantom</h2></div>
-        </div>
-        <div class="panel-body">
-          <%= image_tag 'coming_soon.jpg', alt: 'Fantom Line Coming Soon', class: 'bottom under-drop' %>
-          <%= image_tag 'blueprint_fantom.jpg', alt: 'Fantom Designs For Fello Sunglasses', class: 'top under-drop' %>
-        </div>
-      </div>
+    <div class='col-sm-4'>
+
+      <%= render partial: 'carousel', locals: { one: fantom_one, two: fantom_two, pair: "#fantom" } %>
+
     </div>
 
-    <div class='col-xs-12 col-sm-4'>
-      <div class="panel panel-default card sharp blueprint under-drop">
-        <div class="panel-heading sharp">
-          <div class="panel-title main-text"><h2>Heron</h2></div>
-        </div>
-        <div class="panel-body">
-          <%= image_tag 'coming_soon.jpg', alt: 'Heron (Aviator) Designs For Fello Sunglasses', class: 'bottom under-drop' %>
-          <%= image_tag 'blueprint_heron.jpg', alt: 'Heron Line Coming Soon', class: 'top under-drop' %>
-        </div>
-      </div>
+    <div class='col-sm-4'>
+
+      <%= render partial: 'carousel', locals: { one: heron_one, two: heron_two, pair: "#heron" } %>
+
     </div>
   </div>
+
 </div>
+
+<div class="col-xs-12 no-pad break">
+  <h2 class="main-text text-drop"><a name="story">Our Story</a></h2>
+</diV>
+
+<%= render 'story' %>

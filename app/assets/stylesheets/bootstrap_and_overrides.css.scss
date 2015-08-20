@@ -5,6 +5,15 @@
   To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
   =require twitter-bootstrap-static/fontawesome
   */
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/assets/glyphicons-halflings-regular.eot');
+  src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/glyphicons-halflings-regular.woff') format('woff'), url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+.carousel-indicators {
+  bottom: 0px;
+}
 
 body {
   background-color: #E1E1E1;
@@ -12,14 +21,6 @@ body {
 
 .navbar {
   min-height: 65px;
-}
-
-.thumbnail  {
-  padding: 0;
-
-  img {
-    margin: 0;
-  }
 }
 
 .navbar-brand {
@@ -44,4 +45,15 @@ body {
 .navbar-default .navbar-nav >li > a {
   color: black;
   text-align: inherit;
+}
+
+.carousel-control {
+
+  &.right {
+    background-image: none;
+  }
+
+  &.left {
+    background-image: none;
+  }
 }

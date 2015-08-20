@@ -4,10 +4,27 @@
   <%= favicon_link_tag 'fello_favicon.png' %>
   <title>Fello Eyewear Kickstarter</title>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
   <link rel="dns-prefetch" href="http://www.felloeyewear.com">
   <link href="http://www.felloeyewear.com/" rel="prefetch" />
   <meta content="Are you looking for high quality glasses for a reasonable price? Fello sunglasses are the right deal for you. Help back us on kickstarter." name="description">
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1681055435457029');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1681055435457029&ev=PageView&noscript=1"
+    /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
 <body>
 
