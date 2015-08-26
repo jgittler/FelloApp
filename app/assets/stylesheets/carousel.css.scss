@@ -1,4 +1,22 @@
+.bb-container {
+  width: 90%;
+
+  .row {
+    text-align: center;
+  }
+
+  .bb-square {
+    padding: 3px;
+    float: none;
+    display: inline-block;
+  }
+}
+
 .carousel {
+
+  .carousel-inner > .item > img {
+    width: 100%;
+  }
 
   .panel {
     margin-bottom: 0px;

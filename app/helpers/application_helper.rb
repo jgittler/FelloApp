@@ -34,4 +34,8 @@ module ApplicationHelper
   def heron_three
     image_tag 'blueprint_heron.jpg', alt: 'Heron Line Coming Soon'
   end
+
+  def bb_holder
+    image_tag 'bb_holder.jpg'
+  end
 end
