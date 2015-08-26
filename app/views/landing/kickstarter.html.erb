@@ -1,100 +1,53 @@
-<div class="container bb-container">
-
-  <div class="row">
-    <div class='col-sm-3 bb-square'>
-
-      <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#tl" } %>
-
+<div class="jumbotron bb">
+  <div class="container bb-container">
+    <div class="row">
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#tl" } %>
+      </div>
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#tm" } %>
+      </div>
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#tr" } %>
+      </div>
     </div>
-
-    <div class='col-sm-3 bb-square'>
-
-      <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#tm" } %>
-
+    <div class="row">
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#ml" } %>
+      </div>
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#mm" } %>
+      </div>
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#mr" } %>
+      </div>
     </div>
-
-    <div class='col-sm-3 bb-square'>
-
-      <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#tr" } %>
-
-    </div>
-  </div>
-  <div class="row">
-    <div class='col-sm-3 bb-square'>
-
-      <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#tl" } %>
-
-    </div>
-
-    <div class='col-sm-3 bb-square'>
-
-      <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#tm" } %>
-
-    </div>
-
-    <div class='col-sm-3 bb-square'>
-
-      <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#tr" } %>
-
+    <div class="row">
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#bl" } %>
+      </div>
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#bm" } %>
+      </div>
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#br" } %>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class='col-sm-3 bb-square'>
-
-      <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#tl" } %>
-
-    </div>
-
-    <div class='col-sm-3 bb-square'>
-
-      <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#tm" } %>
-
-    </div>
-
-    <div class='col-sm-3 bb-square'>
-
-      <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#tr" } %>
-
-    </div>
-  </div>
-
-
-
 </div>
 
-<div class="col-xs-12 no-pad break">
-  <h2 class="main-text text-drop">Kickstarter Coming Soon</h2>
+<div class="col-xs-12 break">
 </diV>
 
-<%= image_tag 'konvoy_atlas.jpg', alt: 'Tortoise Shell Konvoy Fello Sunglasses', class: "col-xs-12 no-pad under-drop" %>
+<div class="jumbotron infographic">
+  <div class="row">
+    <%= image_tag 'staright_lines.jpg', alt: 'Tortoise Shell Konvoy Fello Sunglasses', class: 'col-xs-10 col-xs-offset-1' %>
+  </div>
+</div>
 
 <div class="col-xs-12 no-pad break">
   <h2 class="main-text text-drop">Fello Models</h2>
 </diV>
-
-<div class="container-fluid">
-
-  <div class="row">
-    <div class='col-sm-4'>
-
-      <%= render partial: 'carousel', locals: { one: konvoy_one, two: konvoy_two, pair: "#konvoy" } %>
-
-    </div>
-
-    <div class='col-sm-4'>
-
-      <%= render partial: 'carousel', locals: { one: fantom_one, two: fantom_two, pair: "#fantom" } %>
-
-    </div>
-
-    <div class='col-sm-4'>
-
-      <%= render partial: 'carousel', locals: { one: heron_one, two: heron_two, pair: "#heron" } %>
-
-    </div>
-  </div>
-
-</div>
 
 <div class="col-xs-12 no-pad break">
   <h2 class="main-text text-drop"><a name="story">About</a></h2>
