@@ -1,10 +1,12 @@
 @import "card_with_img.css";
 @import "carousel.css";
 @import "call_to_action.css";
+@import "jumbo.css";
 
 .break {
   text-align: center;
   padding-bottom: 10px;
+  background-color: #F8F8F8;
 
   h2 {
     color: black;
@@ -23,23 +25,6 @@
         text-decoration: none;
       }
     }
-  }
-}
-
-.jumbo-pic {
-  padding-top: 25px;
-  padding-bottom: 100px;
-  background: asset-url('fello_pineapple.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  &.jumbotron {
-    margin-bottom: 0px;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   }
 }
 

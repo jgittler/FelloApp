@@ -1,19 +1,18 @@
 .call-to-action {
-  position: absolute;
   z-index: 1;
-  margin-top: 230px;
   color: black;
 
   p.share {
-    font-size: 18px;
+    margin-top: 60px;
+    font-size: 14px;
     margin: 0px;
+    line-height: 2;
   }
 
-  @media (max-width: 768px) {
-    margin-top: 60px;
-
+  @media (min-width: 768px) {
     p.share {
-      font-size: 14px;
+      font-size: 18px;
+      font-weight: 600;
     }
   }
 
@@ -36,7 +35,12 @@
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 22px;
+  }
+
+  .slogan {
+    font-size: 36px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: 768px) {
@@ -47,10 +51,6 @@
 
     .slogan {
       font-size: 40px;
-
-      img {
-        width: 80px;
-      }
     }
   }
 
@@ -62,10 +62,6 @@
 
     .slogan {
       font-size: 65px;
-
-      img {
-        width: 110px;
-      }
     }
   }
 
@@ -77,10 +73,6 @@
 
     .slogan {
       font-size: 85px;
-
-      img {
-        width: 135px;
-      }
     }
   }
 

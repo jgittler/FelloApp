@@ -1,7 +1,7 @@
-<div class="footer col-xs-12 no-pad">
+<div class="footer no-pad">
   <div class="container-fluid main-text">
     <div class="row">
-      <div class="col-sm-4 xs-12">
+      <div class="col-sm-4">
         <h3>Contact Us</h3>
         <ul>
           <li><a href="mailto:contact@felloeyewear.com">Contact@felloeyewear.com</a></li>
@@ -9,7 +9,7 @@
         </ul>
       </div>
 
-      <div class="col-sm-4 col-xs-12">
+      <div class="col-sm-4">
         <h3>Want More Info?</h3>
         <%= form_tag lead_email_path, method: :post, remote: true do %>
           <%= email_field_tag 'email', '', class: "form-control email", placeholder: "Email Address" %>
@@ -18,7 +18,7 @@
         <div class="alert alert-success" role="alert"></div>
       </div>
 
-      <div class="col-sm-4 col-xs-12">
+      <div class="col-sm-4">
         <h3>Considerations</h3>
         <ul>
           <li class="work">Returns Policy <span>(under construction)</span></li>
@@ -27,4 +27,8 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="container-fluid main-text rights">
+  © 2015 Fello Eyewear. All rights reserved.
 </div>
