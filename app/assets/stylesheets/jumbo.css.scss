@@ -1,3 +1,5 @@
+@import "embedded_sheet.css";
+
 .jumbo-pic {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -13,7 +15,7 @@
 .jumbo-about {
   padding-top: 25px;
   padding-bottom: 100px;
-  background-image: url('http://res.cloudinary.com/hxeuqektg/image/upload/v1440575863/fello_pineapple.jpg');
+  // background-image: url('http://res.cloudinary.com/hxeuqektg/image/upload/v1440575863/fello_pineapple.jpg');
   background-position: center;
 }
 
@@ -21,7 +23,7 @@
   color: white;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url('http://res.cloudinary.com/hxeuqektg/image/upload/v1440743996/konvoy_atlas_2.jpg');
+  // background-image: url('http://res.cloudinary.com/hxeuqektg/image/upload/v1440743996/konvoy_atlas_2.jpg');
   background-position: initial;
 
   .panel {
@@ -41,7 +43,7 @@
 .jumbo-dani {
   padding-top: 50px;
   padding-bottom: 370px;
-  background-image: url('http://res.cloudinary.com/hxeuqektg/image/upload/v1440575963/fello_wine_country.jpg');
+  // background-image: url('http://res.cloudinary.com/hxeuqektg/image/upload/v1440575963/fello_wine_country.jpg');
   background-position: center;
 }
 
