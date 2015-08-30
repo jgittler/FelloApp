@@ -10,30 +10,37 @@
 //   src: url('/assets/glyphicons-halflings-regular.eot');
 //   src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/glyphicons-halflings-regular.woff') format('woff'), url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 // }
+$blue: #1FA7D6;
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 
 .carousel-indicators {
   bottom: 0px;
 }
 
 body {
-  background-color: #E1E1E1;
+  background-color: white;
+  color: black;
 }
 
-.navbar {
-  min-height: 65px;
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $blue;
 }
 
-.navbar-brand {
-  padding: 3px 15px;
+.navbar-default .navbar-toggle {
+  border-color: $blue;
+}
+
+.navbar-default .navbar-collapse {
+  border: none;
 }
 
 .navbar-nav > li > a {
   font-size: 20px;
   padding-top: 15px;
-}
-
-body {
-  color: black;
 }
 
 .panel-default > .panel-heading {
@@ -42,9 +49,13 @@ body {
   text-align: center;
 }
 
-.navbar-default .navbar-nav >li > a {
-  color: black;
-  text-align: inherit;
+.navbar-default {
+  border: none;
+
+  .navbar-nav > li > a {
+    color: black;
+    text-align: inherit;
+  }
 }
 
 .carousel-control {
@@ -60,4 +71,30 @@ body {
 
 .panel {
   border: none;
+}
+
+.nav-tabs.nav-justified > li > a,
+.nav-tabs.nav-justified > li > a:hover,
+.nav-tabs.nav-justified > li > a:focus,
+.nav-tabs.nav-justified > li > a:link,
+.nav-tabs.nav-justified > li > a:visited {
+  color: inherit;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 5px solid rgba(31, 186, 214, .1);
+  background-color: inherit;
+}
+
+.nav-tabs.nav-justified > li.active > a,
+.nav-tabs.nav-justified > li.active > a:hover,
+.nav-tabs.nav-justified > li.active > a:focus,
+.nav-tabs.nav-justified > li.active > a:link,
+.nav-tabs.nav-justified > li.active > a:visited {
+  color: inherit;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 5px solid #1FBAD6;
+  background-color: inherit;
 }

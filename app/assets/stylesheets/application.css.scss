@@ -13,24 +13,43 @@
  *= require_tree .
  *= require_self
  */
+
+$blue: #1FA7D6;
+$gray: #999999;
+
 @import "landing.css";
 @import "footer.css";
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Josefin Slab', serif !important;
+.col-sm-4 {
+
+  ::-webkit-input-placeholder {
+     color: rgba($blue, .6);
+  }
+
+  input:-moz-placeholder { /* Firefox 18- */
+     color: rgba($blue, .6);
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: rgba($blue, .6);
+  }
+
+  input:-ms-input-placeholder {
+     color: rgba($blue, .6);
+  }
+}
+
+.form-control {
+  border-color: $gray;
+}
+
+.navbar-default {
+  margin: 10px 0px;
+  background-color: white;
 }
 
 .text-center {
   text-align: center;
-}
-
-.no-pad {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.no-margin {
-  margin: 0;
 }
 
 .sharp {
@@ -41,8 +60,8 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
 }
 
-.text-drop {
-  text-shadow: 0px 2px 2px rgba(165, 165, 165, 0.6);
+.full {
+  width: 100%;
 }
 
 .navbar-center {
@@ -60,22 +79,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Overlock', cursive;
 }
 
+.titles {
+  font-family: 'Overlock SC', cursive;
+}
+
 .fello-text {
   font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  color: inherit;
-}
-
-.nav-container {
-  min-height: inherit;
-  padding-top: 5px;
-  padding-left: 35px;
-  padding-right: 35px;
-}
-
-.logo img {
-  height: 44px;
-  width: 49px;
-  margin-top: 3px;
 }
 
 .navbar-right {
@@ -91,4 +100,19 @@ h1, h2, h3, h4, h5, h6 {
      padding-left: 0;
      padding-right: 0;
   }
+}
+
+.logo {
+  padding: 5px 15px;
+
+  img {
+    height: 100%;
+  }
+}
+
+.row-eq-height {
+  display: inherit;
+  display: inherit;
+  display: inherit;
+  display: inherit;
 }

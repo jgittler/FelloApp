@@ -1,0 +1,37 @@
+<div class="jumbotron bb">
+  <div class="container bb-container">
+    <div class="row">
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_top_left, two: bb_holder, pair: "#tl" } %>
+      </div>
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_top, two: bb_holder, pair: "#tm" } %>
+      </div>
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_top_right, two: bb_holder, pair: "#tr" } %>
+      </div>
+    </div>
+    <div class="row">
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_left, two: bb_holder, pair: "#ml" } %>
+      </div>
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#mm" } %>
+      </div>
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_right, two: bb_holder, pair: "#mr" } %>
+      </div>
+    </div>
+    <div class="row">
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_bottom_left, two: bb_holder, pair: "#bl" } %>
+      </div>
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_bottom, two: bb_holder, pair: "#bm" } %>
+      </div>
+      <div class='col-sm-3 bb-square'>
+        <%= render partial: 'carousel', locals: { one: bb_bottom_right, two: bb_holder, pair: "#br" } %>
+      </div>
+    </div>
+  </div>
+</div>

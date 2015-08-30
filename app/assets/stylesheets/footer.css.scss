@@ -1,8 +1,11 @@
+$gray: #999999;
+
 .footer {
   background-color: black;
-  margin-top: 50px;
+  margin-top: 0px;
   color: white;
   padding: 40px 0px 45px 0px;
+  text-align: left;
 
   .alert {
     display: none;
@@ -24,7 +27,7 @@
   }
 
   .work {
-    color: gray;
+    color: $gray;
 
     span {
       font-style: italic;
@@ -41,7 +44,7 @@
   }
 
   h3 {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid $gray;
     padding-bottom: 5px;
   }
 
@@ -53,4 +56,10 @@
       color: white;
     }
   }
+}
+
+.rights {
+  text-align: center;
+  background-color: $gray;
+  padding: 5px 0px;
 }

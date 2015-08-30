@@ -1,56 +1,5 @@
-<div class="jumbotron bb">
-  <div class="container bb-container">
-    <div class="row">
-      <div class='col-sm-3 bb-square'>
-        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#tl" } %>
-      </div>
-      <div class='col-sm-3 bb-square'>
-        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#tm" } %>
-      </div>
-      <div class='col-sm-3 bb-square'>
-        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#tr" } %>
-      </div>
-    </div>
-    <div class="row">
-      <div class='col-sm-3 bb-square'>
-        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#ml" } %>
-      </div>
-      <div class='col-sm-3 bb-square'>
-        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#mm" } %>
-      </div>
-      <div class='col-sm-3 bb-square'>
-        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#mr" } %>
-      </div>
-    </div>
-    <div class="row">
-      <div class='col-sm-3 bb-square'>
-        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#bl" } %>
-      </div>
-      <div class='col-sm-3 bb-square'>
-        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#bm" } %>
-      </div>
-      <div class='col-sm-3 bb-square'>
-        <%= render partial: 'carousel', locals: { one: bb_holder, two: bb_holder, pair: "#br" } %>
-      </div>
-    </div>
-  </div>
-</div>
+<%= render 'call_to_action' %>
 
-<div class="col-xs-12 break">
-</diV>
+<%= render 'fello_bunch' %>
 
-<div class="jumbotron infographic">
-  <div class="row">
-    <%= image_tag 'staright_lines.jpg', alt: 'Tortoise Shell Konvoy Fello Sunglasses', class: 'col-xs-10 col-xs-offset-1' %>
-  </div>
-</div>
-
-<div class="col-xs-12 no-pad break">
-  <h2 class="main-text text-drop">Fello Models</h2>
-</diV>
-
-<div class="col-xs-12 no-pad break">
-  <h2 class="main-text text-drop"><a name="story">About</a></h2>
-</diV>
-
-<%= render 'story' %>
+<%= render 'models' %>

@@ -1,30 +1,32 @@
 <div id=<%= pair.delete('#') %> class="carousel slide" data-ride="carousel">
 
-  <!-- <!&#45;&#45; Indicators &#45;&#45;> -->
-  <!-- <ol class="carousel&#45;indicators"> -->
-  <!--   <li data&#45;target=<%= pair %> data&#45;slide&#45;to="0" class="active"></li> -->
-  <!--   <li data&#45;target=<%= pair %> data&#45;slide&#45;to="1"></li> -->
-  <!--   <!&#45;&#45; <li data&#38;#45;target=<%#= pair %> data&#38;#45;slide&#38;#45;to="2"></li> &#45;&#45;> -->
-  <!-- </ol> -->
+  <!-- <div class="row bp&#45;container"> -->
+  <!--   <div class="card sharp bp col&#45;xs&#45;12"> -->
+  <!--     <div class="main&#45;text text&#45;center"> -->
+  <!--       <h2><%#= pair.delete('#').capitalize %></h2> -->
+  <!--     </div> -->
+  <!--   </div> -->
+  <!-- </div> -->
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target=<%= pair %> data-slide-to="0" class="active"></li>
+    <li data-target=<%= pair %> data-slide-to="1"></li>
+    <!-- <li data&#45;target=<%#= pair %> data&#45;slide&#45;to="2"></li> -->
+  </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <%= one %>
-      <div class="carousel-caption">
-      </div>
     </div>
 
     <div class="item">
       <%= two %>
-      <div class="carousel-caption">
-      </div>
     </div>
     <!--  -->
     <!-- <div class="item"> -->
     <!--   <%#= three %> -->
-    <!--   <div class="carousel&#45;caption"> -->
-    <!--   </div> -->
     <!-- </div> -->
   </div>
 

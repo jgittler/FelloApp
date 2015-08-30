@@ -1,0 +1,43 @@
+@import "embedded_sheet.css";
+
+.jumbo-pic {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+
+  &.bb {
+    background-color: black;
+  }
+}
+
+.jumbo-about {
+  padding-top: 25px;
+  padding-bottom: 100px;
+  background-position: center;
+}
+
+.jumbo-models {
+  padding-top: 0px;
+  padding-bottom: 50px;
+  background-color: black;
+}
+
+.jumbo-top {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-position: center;
+  color: white;
+
+  h1 {
+    padding: 30px 0px;
+    margin: 0px;
+    font-size: 36px;
+    background-color: rgba(0, 0, 0, .7);
+  }
+}

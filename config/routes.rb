@@ -55,6 +55,9 @@ Rails.application.routes.draw do
   #   end
   root to: "landing#kickstarter", as: "kickstarter"
 
+  get "about",   to: "landing#about",   as: "about"
+  get "charity", to: "landing#charity", as: "charity"
+
   post "lead_email", to: "landing#lead_email", as: "lead_email" 
 
   get "sitemap.xml", to: "sitemap#show", format: "xml", as: "sitemap"

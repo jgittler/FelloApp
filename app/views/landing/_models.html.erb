@@ -1,0 +1,37 @@
+<div class="models">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs nav-justified main-text" role="tablist">
+    <li role="presentation" class="active h2">
+      <a href="#konvoy" aria-controls="home" role="tab" data-toggle="tab">
+        Konvoy
+      </a>
+    </li>
+    <li role="presentation" class="h2">
+      <a href="#fantom" aria-controls="profile" role="tab" data-toggle="tab">
+        Fantom
+      </a>
+    </li>
+    <li role="presentation" class="h2">
+      <a href="#heron" aria-controls="messages" role="tab" data-toggle="tab">
+        Heron
+      </a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="konvoy">
+      <%= render 'model_tab' %>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="fantom">
+      <%= render 'model_tab' %>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="heron">
+      <%= render 'model_tab' %>
+    </div>
+  </div>
+
+</div>

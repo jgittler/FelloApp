@@ -1,5 +1,5 @@
-<nav class="navbar navbar-default sharp no-margin">
-  <div class="container-fluid nav-container">
+<nav class="navbar navbar-default sharp">
+  <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -8,20 +8,37 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to image_tag('fello.png', alt: 'Fello Eyewear Logo'), kickstarter_path, { class: "navbar-brand logo", title: 'Fello Eyewear Home' } %>
+      <%= link_to image_helper('fello.png', alt: 'Fello Eyewear Logo'), kickstarter_path, { class: "logo navbar-brand", title: 'Fello Eyewear Home' } %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-center">
-        <li><a href='https://instagram.com/felloeyewear', target='_blank', title='Fello Eyewear Instagram'><%= image_tag 'instagram.svg', alt: 'Fello Eyewear Instagram' %></a></li>
-        <li><a href='https://www.facebook.com/felloeyewear', target='_blank', title='Fello Eyewear Facebook'><%= image_tag 'facebook.svg', alt: 'Fello Eyewear Facebook' %></a></li>
-        <li><a href='https://twitter.com/felloeyewear', target='_blank', title='Fello Eyewear Twitter'><%= image_tag 'twitter.svg' %></a></li>
-        <li><a href='http://felloeyewear.tumblr.com', target='_blank', title='Fello Eyewear Tumblr'><%= image_tag 'tumblr.svg', alt: 'Fello Eyeware Tumblr' %></a></li>
+        <li>
+          <a href='https://instagram.com/felloeyewear' target='_blank' title='Fello Eyewear Instagram'>
+            <%= image_helper 'instagram.svg', alt: 'Fello Eyewear Instagram' %>
+          </a>
+        </li>
+        <li>
+          <a href='https://www.facebook.com/felloeyewear' target='_blank' title='Fello Eyewear Facebook'>
+            <%= image_helper 'facebook.svg', alt: 'Fello Eyewear Facebook' %>
+          </a>
+        </li>
+        <li>
+          <a href='https://twitter.com/felloeyewear' target='_blank' title='Fello Eyewear Twitter'>
+            <%= image_helper 'twitter.svg', alt: 'Fello Eyewear Twitter' %>
+          </a>
+        </li>
+        <li>
+          <a href='http://felloeyewear.tumblr.com' target='_blank' title='Fello Eyewear Tumblr'>
+            <%= image_helper 'tumblr.svg', alt: 'Fello Eyeware Tumblr' %>
+          </a>
+        </li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "About", kickstarter_path(anchor: "story"), { class: "main-text", title: "Fello Eyewear Story" } %></li>
+        <li><%= link_to "Charity", charity_path, { class: "main-text", title: "Vosh and Fello Eyewear" } %></li>
+        <li><%= link_to "About", about_path, { class: "main-text", title: "About Fello Eyewear" } %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
