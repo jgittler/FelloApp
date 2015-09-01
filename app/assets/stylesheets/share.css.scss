@@ -1,0 +1,101 @@
+$gray: #999999;
+
+.share {
+
+  h2.titles {
+    margin-bottom: 0px;
+    margin-top: 30px;
+  }
+
+  &.icons {
+
+    h4 {
+      color: $gray;
+    }
+
+    h3 {
+      margin-top: 0px;
+      font-size: 24px;
+
+      @media(min-width: 768px) {
+        font-size: 20px;
+      }
+
+      @media(min-width: 992px) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .card {
+    text-align: center;
+  }
+
+  &.stripe {
+
+    h3 {
+     margin: 15px 0px;
+    }
+
+    h4 {
+      padding: 0px 10px; 
+    }
+  }
+
+  img {
+    max-height: 220px;
+
+    @media(min-width: 768px) {
+      max-height: 160px;
+    }
+
+    @media(min-width: 992px) {
+      max-height: 220px;
+    }
+
+    &:hover {
+      -webkit-animation: spin 2.5s ease-in;
+      -moz-animation: spin 2.5s ease-in;
+      animation: spin 2.5s ease-in;
+    }
+
+    @keyframes spin { 
+      50% {
+        transform: rotate(180deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @-webkit-keyframes spin { 
+      50% {
+        -webkit-transform: rotate(180deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @-moz-keyframes spin { 
+      50% {
+        -moz-transform: rotate(180deg);
+      }
+
+      100% {
+        -moz-transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+.jumbo-share {
+  padding-top: 130px !important;
+  padding-bottom: 130px !important;
+
+  .text-center {
+    margin-top: -75px;
+  }
+}

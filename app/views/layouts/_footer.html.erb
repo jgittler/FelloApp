@@ -1,34 +1,47 @@
-<div class="footer no-pad">
-  <div class="container-fluid main-text">
+<div class="footer">
+  <div class="container main-text">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <h3>Contact Us</h3>
         <ul>
-          <li><a href="mailto:contact@felloeyewear.com">Contact@felloeyewear.com</a></li>
-          <li class="work">Founders <span>(under construction)</span></li>
+          <li><a href="mailto:contact@felloeyewear.com">contact@felloeyewear.com</a></li>
+          <li class="work">Founders</li>
         </ul>
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-sm-4 col-sm-offset-1">
         <h3>Want More Info?</h3>
         <%= form_tag lead_email_path, method: :post, remote: true do %>
-          <%= email_field_tag 'email', '', class: "sharp form-control email", placeholder: "Email Address" %>
+          <%= email_field_tag 'email', '', class: "sharp form-control email", required: true, placeholder: "Email Address" %>
           <%= image_submit_tag "email.png", class: "plane" %>
         <% end %> 
-        <div class="alert alert-success sharp" role="alert"></div>
+        <div class="alert sharp" role="alert"></div>
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-sm-3 col-sm-offset-1">
         <h3>Considerations</h3>
         <ul>
-          <li class="work">Returns Policy <span>(under construction)</span></li>
-          <li class="work">Privacy Policy <span>(under construction)</span></li>
+          <li class="work">Returns Policy</li>
+          <li class="work">Privacy Policy</li>
         </ul>
+      </div>
+    </div>
+
+    <div class="h-divide">
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 nav nav-bar text-center no-pad">
+
+        <%= render 'layouts/footer_icons_lg' %>
+
+        <%= render 'layouts/footer_icons_sm' %>
+
       </div>
     </div>
   </div>
 </div>
 
 <div class="container-fluid main-text rights">
-  © 2015 Fello Eyewear. All rights reserved.
+  © 2015 Fello Eyewear. All rights reserved. Santa Barbara, CA.
 </div>

@@ -34,11 +34,15 @@
 </head>
 <body>
 
-<%= render 'layouts/nav_bar' %>
+<% unless current_page?(controller: 'landing', action: 'share') %>
+  <%= render 'layouts/nav_bar' %>
+<% end %>
 
 <%= yield %>
 
-<%= render 'layouts/footer' %>
+<% unless current_page?(controller: 'landing', action: 'share') %>
+  <%= render 'layouts/footer' %>
+<% end %>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -20,4 +20,11 @@ class JumboImage
       'fello_and_vosh.jpg'
     end
   end
+
+  def self.share
+    if Rails.env.production?
+    else
+      'konvoy_on_rock.jpg'
+    end
+  end
 end
