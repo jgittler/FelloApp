@@ -1,14 +1,16 @@
-<div id=<%= pair.delete('#') %> class="carousel slide" data-ride="carousel">
+<div id=<%= pair %> class="carousel slide same-size" data-ride="carousel">
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <%= one %>
+  <div class="carousel-inner same-size" role="listbox">
+    <div class="item active jumbo-pic bunch-pic  same-size <%= "top-#{pair}" %>">
+      <%# <% if pair == 'mm' %>
+      <%#   <%= image_helper 'fello_center.png' %>
+      <%# <% end %>
     </div>
 
-    <div class="item">
-      <%= two %>
-    </div>
+    <!-- <div class="item"> -->
+    <!--   <%#= two %> -->
+    <!-- </div> -->
     <!--  -->
     <!-- <div class="item"> -->
     <!--   <%#= three %> -->
@@ -16,10 +18,10 @@
   </div>
 
   <!-- Controls -->
-  <a class="left carousel-control" href=<%= pair %> role="button" data-slide="prev">
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href=<%= pair %> role="button" data-slide="next">
-    <span class="sr-only">Next</span>
-  </a>
+  <!-- <a class="left carousel&#45;control" href=<%#= pair %> role="button" data&#45;slide="prev"> -->
+  <!--   <span class="sr&#45;only">Previous</span> -->
+  <!-- </a> -->
+  <!-- <a class="right carousel&#45;control" href=<%#= pair %> role="button" data&#45;slide="next"> -->
+  <!--   <span class="sr&#45;only">Next</span> -->
+  <!-- </a> -->
 </div>

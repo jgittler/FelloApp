@@ -1,26 +1,7 @@
 module ApplicationHelper
-  def konvoy_one
-    image_helper 'blueprint_konvoy_2.jpg', alt: 'Konvoy Designs For Fello Sunglasses'
-  end
-
-  def konvoy_two
-    image_helper 'jerome_konvoy.jpg', alt: 'Fello Eyewear At The Golden Gate Bridge'
-  end
-
-  def fantom_one
-    image_helper 'blueprint_fantom_hd.jpg', alt: 'Fantom Designs For Fello Sunglasses'
-  end
-
-  def fantom_two
-    image_helper 'coming_soon_2.jpg', alt: 'Fantom Line Coming Soon'
-  end
-
-  def heron_one
-    image_helper 'blueprint_heron_hd.jpg', alt: 'Heron Line Coming Soon'
-  end
-
-  def heron_two
-    image_helper 'coming_soon_2.jpg', alt: 'Heron (Aviator) Designs For Fello Sunglasses'
+  def charity_text
+    "For every pair of sunglasses sold we donate $5 to help
+    the nearly 1 billion people around the world that don't have access to glasses."
   end
 
   def image_helper(name, options = {})
@@ -31,39 +12,39 @@ module ApplicationHelper
     end
   end
 
-  def bb_holder
+  def bb_center
     image_tag 'bbfello.jpg'
   end
 
   def bb_top_left
-    image_tag 'btleft.jpg'
+    image_tag 'ridge_down.jpg'
   end
 
   def bb_left
-    image_tag 'bleft.jpg'
+    image_tag 'cody.jpg'
   end
 
   def bb_bottom_left
-    image_tag 'bbleft.jpg'
+    image_tag 'matt.jpg'
   end
 
   def bb_top
-    image_tag 'btop.jpg'
+    image_tag 'kayrah.jpg'
   end
 
   def bb_bottom
-    image_tag 'bbottom.jpg'
+    image_tag 'cate.jpg'
   end
 
   def bb_top_right
-    image_tag 'btright.jpg'
+    image_tag 'jerome.jpg'
   end
 
   def bb_right
-    image_tag 'bright.jpg'
+    image_tag 'michelle.jpg'
   end
 
   def bb_bottom_right
-    image_tag 'bbright.jpg'
+    image_tag 'kassan.jpg'
   end
 end

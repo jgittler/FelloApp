@@ -27,4 +27,39 @@ class JumboImage
       'konvoy_on_rock.jpg'
     end
   end
+
+  def self.smile_girl
+    if Rails.env.production?
+    else
+      'smile_girl.jpg'
+    end
+  end
+
+  def self.thumbs_up
+    if Rails.env.production?
+    else
+      'thumbs_up.jpg'
+    end
+  end
+
+  def self.smile_gown
+    if Rails.env.production?
+    else
+      'smile_gown.jpg'
+    end
+  end
+
+  def self.eye_exam
+    if Rails.env.production?
+    else
+      'eye_exam.jpg'
+    end
+  end
+
+  def self.eye_cover
+    if Rails.env.production?
+    else
+      'eye_cover.jpg'
+    end
+  end
 end

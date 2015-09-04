@@ -2,6 +2,9 @@ class LandingController < ApplicationController
   def kickstarter
     @about_active = ""
     @charity_active = ""
+    @konvoy = Product.new(:konvoy)
+    @fantom = Product.new(:fantom)
+    @heron = Product.new(:heron)
   end
 
   def about

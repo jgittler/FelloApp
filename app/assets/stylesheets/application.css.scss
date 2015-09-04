@@ -57,7 +57,9 @@ $gray: #999999;
 }
 
 .sharp {
-  border-radius: 0;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
 }
 
 .no-border {
@@ -115,11 +117,12 @@ $gray: #999999;
 }
 
 .main-text {
-  font-family: 'Overlock', cursive;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .titles {
-  font-family: 'Overlock SC', cursive;
+  font-variant: small-caps;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .fello-text {

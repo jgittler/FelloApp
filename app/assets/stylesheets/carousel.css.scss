@@ -18,7 +18,17 @@
     padding: 3px;
     float: none;
     display: inline-block;
-    height: 270px;
-    overflow: hidden;
+    height: 200px;
+    width: 100%;
+
+    @media(min-width: 768px) {
+      height: 200px;
+      width: 200px;
+    }
+
+    @media(min-width: 992px) {
+      height: 250px;
+      width: 250px;
+    }
   }
 }

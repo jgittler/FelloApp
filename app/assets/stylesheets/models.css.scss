@@ -2,7 +2,7 @@ $blue: #1FA7D6;
 
 .models {
 
-  .close-up > img {
+  .close-up .tab-pane > img {
     width: 100%;
     overflow: hidden;
   }
@@ -45,6 +45,41 @@ $blue: #1FA7D6;
     
     img {
       width: 50%;
+    }
+  }
+
+  .subtab {
+    
+    li.h4 {
+
+      @media(min-width: 768px) {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .nav-tabs.nav-justified > li > a,
+    .nav-tabs.nav-justified > li > a:hover,
+    .nav-tabs.nav-justified > li > a:focus,
+    .nav-tabs.nav-justified > li > a:link,
+    .nav-tabs.nav-justified > li > a:visited {
+      color: inherit;
+      border: none;
+      background-color: white;
+    }
+
+    .nav-tabs.nav-justified > li > a:hover {
+      background-color: $blue;
+    }
+
+    .nav-tabs.nav-justified > li.active > a,
+    .nav-tabs.nav-justified > li.active > a:hover,
+    .nav-tabs.nav-justified > li.active > a:focus,
+    .nav-tabs.nav-justified > li.active > a:link,
+    .nav-tabs.nav-justified > li.active > a:visited {
+      color: inherit;
+      border: none;
+      background-color: $blue;
     }
   }
 }

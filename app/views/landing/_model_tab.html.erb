@@ -1,7 +1,29 @@
-<div class="container">
+<div class="container main-text">
   <div class="row row-eq-height">
-    <div class="col-sm-5 col-xs-12 close-up">
-      <%= image_helper 'close_up.jpg' %>
+    <div class="col-sm-5 col-xs-12 close-up subtab">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs nav-justified" role="tablist">
+        <li role="presentation" class="active h4">
+          <a href="#first_<%= product.name %>" class="sharp" aria-controls="home" role="tab" data-toggle="tab">
+            <%= product.original %>
+          </a>
+        </li>
+        <li role="presentation" class="h4">
+          <a href="#second_<%= product.name %>" class="sharp" aria-controls="profile" role="tab" data-toggle="tab">
+            <%= product.alternate %>
+          </a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="first_<%= product.name %>">
+          <%= image_helper product.original_front, class: 'product-shot', data: { front: image_url(product.original_front), angle: image_url(product.original_angle) } %>
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="second_<%= product.name %>">
+          <%= image_helper product.alternate_front, class: 'product-shot', data: { front: image_url(product.alternate_front), angle: image_url(product.alternate_angle) } %>
+        </div>
+      </div>
     </div>
 
     <div class="col-xs-1 v-divider hidden-xs">
@@ -11,9 +33,9 @@
     <div class="h-divider visible-xs"></div>
 
     <div class="col-sm-5 col-xs-12 text-center buy">
-      <%= image_helper 'price.png', class: 'pull-left' %>
+      <%= image_helper product.price, class: 'pull-left' %>
       <%= image_helper 'fittings.jpg' %>
-      <button class="btn btn-lg sharp full main-text">
+      <button class="btn btn-lg sharp full">
         Get A Pair On Kickstarter
       </button>
     </div>

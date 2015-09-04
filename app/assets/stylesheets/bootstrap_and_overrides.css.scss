@@ -96,6 +96,10 @@ body {
   background-color: inherit;
 }
 
+.nav-tabs.nav-justified > li > a:hover {
+  border-bottom: 5px solid #1FBAD6;
+}
+
 .nav-tabs.nav-justified > li.active > a,
 .nav-tabs.nav-justified > li.active > a:hover,
 .nav-tabs.nav-justified > li.active > a:focus,
