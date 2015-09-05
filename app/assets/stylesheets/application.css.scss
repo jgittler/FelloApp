@@ -20,6 +20,11 @@ $gray: #999999;
 @import "landing.css";
 @import "footer.css";
 
+.working {
+  color: $gray;
+  font-style: italic;
+}
+
 .col-sm-4 {
 
   ::-webkit-input-placeholder {

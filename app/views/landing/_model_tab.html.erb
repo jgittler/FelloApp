@@ -8,6 +8,7 @@
             <%= product.original %>
           </a>
         </li>
+
         <li role="presentation" class="h4">
           <a href="#second_<%= product.name %>" class="sharp" aria-controls="profile" role="tab" data-toggle="tab">
             <%= product.alternate %>
@@ -36,7 +37,7 @@
       <%= image_helper product.price, class: 'pull-left' %>
       <%= image_helper 'fittings.jpg' %>
       <button class="btn btn-lg sharp full">
-        Get A Pair On Kickstarter
+        <span class="working">Get A Pair On Kickstarter</span>
       </button>
     </div>
   </div>

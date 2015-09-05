@@ -12,7 +12,7 @@
   <meta property="og:url" content="http://www.felloeyewear.com/"/>
   <meta property="og:type" content="website"/>
   <meta property="og:title" content="Fello Eyewear Kickstarter"/>
-  <meta property="og:image" content="<%= image_url "fello_wine_country.jpg" %>"/>
+  <meta property="og:image" content="http://res.cloudinary.com/hxeuqektg/image/upload/v1441407755/cate_lg.jpg"/>
   <meta property="og:description" content="Lost? Broken? Stolen? We'll replace them for free."/>
 
   <!-- Facebook Pixel Code -->
@@ -32,6 +32,10 @@
   <!-- End Facebook Pixel Code -->
 </head>
 <body>
+
+<!--[if IE]>
+<h1>Sorry, but we don't support Internet Explorer. Maybe try downloading Goolge Chrome.</h1>
+<![endif]-->
 
 <% unless current_page?(controller: 'landing', action: 'share') %>
   <%= render 'layouts/nav_bar' %>
