@@ -13,38 +13,89 @@
  *= require_tree .
  *= require_self
  */
+
+$blue: #1FA7D6;
+$gray: #999999;
+
 @import "landing.css";
 @import "footer.css";
+
+.working {
+  color: $gray;
+  font-style: italic;
+}
+
+.col-sm-4 {
+
+  ::-webkit-input-placeholder {
+     color: rgba($blue, .6);
+  }
+
+  input:-moz-placeholder { /* Firefox 18- */
+     color: rgba($blue, .6);
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: rgba($blue, .6);
+  }
+
+  input:-ms-input-placeholder {
+     color: rgba($blue, .6);
+  }
+}
+
+.form-control {
+  border-color: $gray;
+}
+
+.navbar-default {
+  margin: 0px;
+  background-color: white;
+
+  li {
+    padding: 10px 0px;
+  }
+}
 
 .text-center {
   text-align: center;
 }
 
-.no-pad {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.no-margin {
-  margin: 0;
-}
-
 .sharp {
-  border-radius: 0;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
 }
 
 .no-border {
   border: none;
 }
 
-.text-drop {
-  text-shadow: 0px 2px 2px rgba(165, 165, 165, 0.6);
+.no-pad {
+  padding: 0px;
+}
+
+.full {
+  width: 100%;
 }
 
 .navbar-center {
-  position: relative;
-  left: 50%;
-  margin-left: -155px;
+  text-align: center;
+  border-top: 1px solid $blue;
+
+  @media(min-width: 768px) {
+    border: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  @media(min-width: 768px) {
+    position: relative;
+    left: 50%;
+    margin-left: -155px;
+  }
 
   img {
     max-height: 40px;
@@ -52,30 +103,35 @@
   }
 }
 
+.navbar-right {
+  text-align: center;
+
+  li {
+    display: inline-block;
+
+    &.active {
+      border-bottom: 3px solid $blue;
+      padding-bottom: 7px;
+    }
+
+    &:hover {
+      border-bottom: 3px solid $blue;
+      padding-bottom: 7px;
+    }
+  }
+}
+
 .main-text {
-  font-family: 'Overlock', cursive;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .titles {
-  font-family: 'Overlock SC', cursive;
+  font-variant: small-caps;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .fello-text {
   font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  color: inherit;
-}
-
-.nav-container {
-  min-height: inherit;
-  padding-top: 5px;
-  padding-left: 35px;
-  padding-right: 35px;
-}
-
-.logo img {
-  height: 44px;
-  width: 49px;
-  margin-top: 3px;
 }
 
 .navbar-right {
@@ -90,5 +146,15 @@
      display: inline;
      padding-left: 0;
      padding-right: 0;
+  }
+}
+
+.logo {
+  padding: 5px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  img {
+    height: 100%;
   }
 }

@@ -1,47 +1,5 @@
 <%= render 'call_to_action' %>
 
-<div class="col-xs-12 no-pad break">
-  <h2 class="titles text-drop">Kickstarter Coming Soon</h2>
-</div>
+<%= render 'fello_bunch' %>
 
-<%= render 'atlas' %>
-
-<div class="col-xs-12 no-pad break">
-  <br />
-  <br />
-  <h1 class="titles text-drop">Fello Models</h1>
-  <br />
-  <br />
-</div>
-
-<div class="row">
-  <div class="jumbotron col-xs-12 jumbo-models jumbo-pic">
-    <div class="container-fluid">
-      <div class='col-sm-4'>
-
-        <%= render partial: 'carousel', locals: { one: konvoy_one, two: konvoy_two, pair: "#konvoy" } %>
-
-      </div>
-
-      <div class='col-sm-4'>
-
-        <%= render partial: 'carousel', locals: { one: fantom_one, two: fantom_two, pair: "#fantom" } %>
-
-      </div>
-
-      <div class='col-sm-4'>
-
-        <%= render partial: 'carousel', locals: { one: heron_one, two: heron_two, pair: "#heron" } %>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="col-xs-12 no-pad break">
-  <br />
-  <h2 class="titles text-drop"><a name="story">About</a></h2>
-  <br />
-</div>
-
-<%= render 'story' %>
+<%= render 'models' %>

@@ -1,30 +1,34 @@
-.carousel {
-
-  .panel {
-    margin-bottom: 0px;
-
-    &.card {
-      padding: 0px;
-      border: none;
-    }
-  }
-
-  .glyphicon-circle-arrow-right, .glyphicon-circle-arrow-left {
-    font-size: 25px;
-    color: black;
-    margin-right: -15px;
-    width: 30px;
-    height: 30px;
-    margin-top: -15px;
-    right: 50%;
-    position: absolute;
-    top: 50%;
-    z-index: 5;
-    display: inline-block;
-  }
-
-  @media (max-width: 768px) {
-    margin-bottom: 20px;
-  }
+.jumbotron.bb {
+  background-color: white;
 }
 
+.bb-container {
+  width: 90%;
+  background-color: inherit;
+
+  @media(max-width: 992px) {
+    width: 100%;
+  }
+
+  .row {
+    text-align: center;
+  }
+
+  .bb-square {
+    padding: 3px;
+    float: none;
+    display: inline-block;
+    height: 200px;
+    width: 100%;
+
+    @media(min-width: 768px) {
+      height: 200px;
+      width: 200px;
+    }
+
+    @media(min-width: 992px) {
+      height: 250px;
+      width: 250px;
+    }
+  }
+}

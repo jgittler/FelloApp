@@ -1,0 +1,95 @@
+$blue: #1FA7D6;
+
+.models {
+
+  .close-up .tab-pane > img {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .tab-content {
+    padding: 30px 0px;
+  }
+
+
+  .v-divider {
+    border-right: 1px solid black;
+  }
+
+  .h-divider {
+    clear: left;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+  }
+
+  .btn {
+    font-size: 22px;
+    color: white;
+    margin-top: 15px;
+    background-color: $blue;
+    border-color: darken($blue, 15%)
+  }
+
+  .btn:hover {
+    background-color: darken($blue, 5%);
+  }
+
+  .btn:active {
+    background-color: darken($blue, 10%);
+  }
+
+  .buy {
+    margin-top: auto;
+    margin-bottom: auto;
+    
+    img {
+      width: 50%;
+    }
+  }
+
+  .subtab {
+    
+    li.h4 {
+
+      @media(min-width: 768px) {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .nav-tabs.nav-justified > li > a,
+    .nav-tabs.nav-justified > li > a:hover,
+    .nav-tabs.nav-justified > li > a:focus,
+    .nav-tabs.nav-justified > li > a:link,
+    .nav-tabs.nav-justified > li > a:visited {
+      color: inherit;
+      border: none;
+      background-color: white;
+    }
+
+    .nav-tabs.nav-justified > li > a:hover {
+      background-color: $blue;
+    }
+
+    .nav-tabs.nav-justified > li.active > a,
+    .nav-tabs.nav-justified > li.active > a:hover,
+    .nav-tabs.nav-justified > li.active > a:focus,
+    .nav-tabs.nav-justified > li.active > a:link,
+    .nav-tabs.nav-justified > li.active > a:visited {
+      color: inherit;
+      border: none;
+      background-color: $blue;
+    }
+  }
+}
+
+.row-eq-height {
+
+  @media(min-width: 768px) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}

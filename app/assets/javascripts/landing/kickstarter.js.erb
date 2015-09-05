@@ -1,0 +1,16 @@
+$(document).ready(function() {
+  $("img.product-shot").hover(function(){
+    var front = $(this).data('front');
+    var angle = $(this).data('angle');
+    var $this = $(this);
+    $this.stop().animate({ opacity: 0 }, 600);
+      setTimeout(function() {
+        if ($this.attr('src').indexOf('front') >= 0) {
+          $this.stop().animate({ opacity: 1 }, 600).attr('src', angle);
+      } else {
+        console.log('sadfdsf');
+          $this.stop().animate({ opacity: 1 }, 600).attr('src', front);
+      }
+    }, 500);
+  });
+}); 

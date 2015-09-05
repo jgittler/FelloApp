@@ -16,12 +16,13 @@
 //= require turbolinks
 //= require_tree .
 
-$('.carousel').carousel({
-  interval: false
-}) 
+$(document).ready(function() {
 
-$(document).ready(function(){
-  $("form").on("ajax:success", function(){
+  $('.carousel').carousel({
+    interval: false
+  }) 
+
+  $("form").on("ajax:success", function() {
     $(this).find('input[name="email"]').val('');
     $('.alert').text('Thank You');
     $('.alert').show();
@@ -29,4 +30,5 @@ $(document).ready(function(){
       $('.alert').hide();
     }, 2000);
   });
+
 });
