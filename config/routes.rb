@@ -56,7 +56,8 @@ Rails.application.routes.draw do
   root to: "landing#kickstarter", as: "kickstarter"
 
   get "about",   to: "landing#about",   as: "about"
-  get "charity", to: "landing#charity", as: "charity"
+  # get "charity", to: "landing#charity", as: "charity"
+  get "charity", to: "landing#kickstarter", as: "charity"
   get "share",   to: "landing#share",   as: "share"
 
   post "lead_email", to: "landing#lead_email", as: "lead_email" 
