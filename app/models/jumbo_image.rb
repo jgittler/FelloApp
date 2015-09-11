@@ -15,9 +15,9 @@ class JumboImage
     end
   end
 
-  def self.cate_lg
+  def self.cate_lg################
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441407755/cate_lg.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441852503/cate_lg.jpg"
     else
       'cate_lg.jpg'
     end
@@ -71,33 +71,33 @@ class JumboImage
     end
   end
 
-  def self.tl_1
+  def self.tl_1############
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441407800/matt.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441852821/matt.jpg"
     else
       'matt.jpg'
     end
   end
 
-  def self.tm_1
+  def self.tm_1##########
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441407786/owen.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441852873/owen.jpg"
     else
       'owen.jpg'
     end
   end
 
-  def self.tr_1
+  def self.tr_1#############
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441407785/kayrah.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441852914/kayrah.jpg"
     else
       'kayrah.jpg'
     end
   end
 
-  def self.ml_1
+  def self.ml_1###########
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441407786/ridge_down.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441852846/ridge_down.jpg"
     else
       'ridge_down.jpg'
     end
@@ -111,57 +111,57 @@ class JumboImage
     end
   end
 
-  def self.mr_1
+  def self.mr_1###########
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441407755/dani.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441852961/dani.jpg"
     else
       'dani.jpg'
     end
   end
 
-  def self.bl_1
+  def self.bl_1###########
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441407755/cate.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441852991/cate.jpg"
     else
       'cate.jpg'
     end
   end
 
-  def self.bm_1
+  def self.bm_1#########
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441407801/kassan.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441852797/kassan.jpg"
     else
       'kassan.jpg'
     end
   end
 
-  def self.br_1
+  def self.br_1#########
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441407840/jerome_smile.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441852706/jerome_smile.jpg"
     else
       'jerome_smile.jpg'
     end
   end
 
-  def self.tl_xs_1
+  def self.tl_xs_1#########
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441407827/matt-xs.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441852767/matt-xs.jpg"
     else
       'matt-xs.jpg'
     end
   end
 
-  def self.tr_xs_1
+  def self.tr_xs_1###########
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441407782/kayrah-xs.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441852939/kayrah-xs.jpg"
     else
       'kayrah-xs.jpg'
     end
   end
 
-  def self.ml_xs_1
+  def self.ml_xs_1###########
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441407785/ridge_down-xs.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441852894/ridge_down-xs.jpg"
     else
       'ridge_down-xs.jpg'
     end
@@ -175,25 +175,25 @@ class JumboImage
     end
   end
 
-  def self.mr_xs_1
+  def self.mr_xs_1###########
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441407751/dani-xs.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441853033/dani-xs.jpg"
     else
       'dani-xs.jpg'
     end
   end
 
-  def self.bl_xs_1
+  def self.bl_xs_1###########
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441407751/cate-xs.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441853052/cate-xs.jpg"
     else
       'cate-xs.jpg'
     end
   end
 
-  def self.bm_xs_1
+  def self.bm_xs_1###########
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441407839/kassan-xs.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441852745/kassan-xs.jpg"
     else
       'kassan-xs.jpg'
     end
