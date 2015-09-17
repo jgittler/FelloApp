@@ -137,9 +137,9 @@ class JumboImage
 
   def self.br_1#########
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441852706/jerome_smile.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1442532099/jerome.jpg"
     else
-      'jerome_smile.jpg'
+      'jerome.jpg'
     end
   end
 
