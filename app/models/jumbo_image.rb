@@ -113,7 +113,7 @@ class JumboImage
 
   def self.mr_1###########
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441852991/cate.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1442513923/cate.jpg"
     else
       'cate.jpg'
     end
@@ -185,7 +185,7 @@ class JumboImage
 
   def self.bl_xs_1###########
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1441853052/cate-xs.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1442513913/cate-xs.jpg"
     else
       'cate-xs.jpg'
     end
