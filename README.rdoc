@@ -26,3 +26,15 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+==Unfollow On Twitter
+  var cards = $('.ProfileCard-content');
+
+  var clickUnfollow = function(card) {
+    if (!card.find('.FollowStatus').length) {
+      card.find('.user-actions-follow-button').trigger('click')
+    }
+  };
+
+
+  cards.each(function() { clickUnfollow($(this)) });
