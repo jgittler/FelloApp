@@ -1,4 +1,10 @@
 module ApplicationHelper
+  def dynamic_title
+    unless current_page?('/')
+      " | #{action_name.titleize}"
+    end
+  end
+
   def charity_text
     "For every pair of sunglasses sold we donate $5 to help
     the nearly 1 billion people around the world that don't have access to glasses."
