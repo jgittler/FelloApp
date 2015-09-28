@@ -20,6 +20,11 @@ $gray: #999999;
 @import "landing.css";
 @import "footer.css";
 
+.working {
+  color: $gray;
+  font-style: italic;
+}
+
 .col-sm-4 {
 
   ::-webkit-input-placeholder {
@@ -37,11 +42,6 @@ $gray: #999999;
   input:-ms-input-placeholder {
      color: rgba($blue, .6);
   }
-}
-
-.working {
-  color: $gray;
-  font-style: italic;
 }
 
 .form-control {
