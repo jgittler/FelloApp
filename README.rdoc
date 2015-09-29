@@ -41,3 +41,6 @@ Please feel free to use a different markup language if you do not plan to run
 
 ==Unfavorite On Twitter
   $('.Icon.Icon--favorite').each(function() { $(this).trigger('click') });
+
+==Page Scroll Down
+  $(document).scrollTop($(document).scrollTop()+$(window).height());
