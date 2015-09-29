@@ -38,3 +38,6 @@ Please feel free to use a different markup language if you do not plan to run
 
 
   cards.each(function() { clickUnfollow($(this)) });
+
+==Unfavorite On Twitter
+  $('.Icon.Icon--favorite').each(function() { $(this).trigger('click') });
