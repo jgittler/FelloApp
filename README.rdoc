@@ -29,6 +29,8 @@ Please feel free to use a different markup language if you do not plan to run
 
 ==Unfollow On Twitter
   var cards = $('.ProfileCard-content');
+  /* From the bottom use: */
+  var cards = $('.ProfileCard-content').slice(Math.max(<cards array>.length - <n>, 1));
 
   var clickUnfollow = function(card) {
     if (!card.find('.FollowStatus').length) {
