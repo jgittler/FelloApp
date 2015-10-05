@@ -1,16 +1,8 @@
 $(document).ready(function() {
-  $("img.product-shot").hover(function(){
-    var front = $(this).data('front');
-    var angle = $(this).data('angle');
-    var $this = $(this);
-    $this.stop().animate({ opacity: 0 }, 600);
-      setTimeout(function() {
-        if ($this.attr('src').indexOf('front') >= 0) {
-          $this.stop().animate({ opacity: 1 }, 100).attr('src', angle);
-      } else {
-        console.log('sadfdsf');
-          $this.stop().animate({ opacity: 1 }, 100).attr('src', front);
-      }
-    }, 100);
+  $("img.product-shot").mouseover(function() {
+    $(this).attr("src", $(this).data('angle'));
+  });
+  $("img.product-shot").mouseout(function() {
+    $(this).attr("src", $(this).data('front'));
   });
 }); 

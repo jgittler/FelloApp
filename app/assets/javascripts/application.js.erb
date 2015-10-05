@@ -31,4 +31,12 @@ $(document).ready(function() {
     }, 2000);
   });
 
+  $(".sm img").mouseover(function() { 
+    $(this).attr("src", $(this).data('alt'));
+  });
+  $(".sm img").mouseout(function() {
+    $(this).attr("src", $(this).data('main'));
+  });
+
 });
+

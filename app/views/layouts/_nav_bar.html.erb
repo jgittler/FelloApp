@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default sharp">
+<span itemscope itemtype="http://schema.org/Product"><nav class="navbar navbar-default sharp">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -8,30 +8,30 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to image_helper('fello.png', alt: 'Fello Eyewear Logo'), kickstarter_path, { class: "logo navbar-brand", title: 'Fello Eyewear Home' } %>
+      <%= link_to image_helper('fello.png', itemprop: "logo", alt: 'Fello Eyewear Logo'), kickstarter_path, { class: "logo navbar-brand", title: 'Fello Eyewear Home' } %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-center">
+      <ul class="nav navbar-nav navbar-center sm">
         <li>
           <a href='https://instagram.com/felloeyewear' target='_blank' title='Fello Eyewear Instagram'>
-            <%= image_helper 'instagram.svg', alt: 'Fello Eyewear Instagram' %>
+            <%= image_helper 'black_instagram.svg', alt: 'Fello Eyewear Instagram', data: { main: img_url_helper('black_instagram.svg'), alt: img_url_helper('blue_instagram.svg') } %>
           </a>
         </li>
         <li>
           <a href='https://www.facebook.com/felloeyewear' target='_blank' title='Fello Eyewear Facebook'>
-            <%= image_helper 'facebook.svg', alt: 'Fello Eyewear Facebook' %>
+            <%= image_helper 'black_facebook.svg', alt: 'Fello Eyewear Facebook', data: { main: img_url_helper('black_facebook.svg'), alt: img_url_helper('blue_facebook.svg') } %>
           </a>
         </li>
         <li>
           <a href='https://twitter.com/felloeyewear' target='_blank' title='Fello Eyewear Twitter'>
-            <%= image_helper 'twitter.svg', alt: 'Fello Eyewear Twitter' %>
+            <%= image_helper 'black_twitter.svg', alt: 'Fello Eyewear Twitter', data: { main: img_url_helper('black_twitter.svg'), alt: img_url_helper('blue_twitter.svg') } %>
           </a>
         </li>
         <li>
           <a href='http://felloeyewear.tumblr.com' target='_blank' title='Fello Eyewear Tumblr'>
-            <%= image_helper 'tumblr.svg', alt: 'Fello Eyeware Tumblr' %>
+            <%= image_helper 'black_tumblr.svg', alt: 'Fello Eyeware Tumblr', data: { main: img_url_helper('black_tumblr.svg'), alt: img_url_helper('blue_tumblr.svg') } %>
           </a>
         </li>
       </ul>

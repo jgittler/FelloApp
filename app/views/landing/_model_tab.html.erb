@@ -18,11 +18,11 @@
 
       <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="first_<%= product.name %>">
-          <%= image_helper product.original_front, class: 'product-shot', data: { front: image_url(product.original_front), angle: image_url(product.original_angle) } %>
+          <%= image_helper product.original_front, class: 'product-shot', data: { front: img_url_helper(product.original_front), angle: img_url_helper(product.original_angle) } %>
         </div>
 
         <div role="tabpanel" class="tab-pane" id="second_<%= product.name %>">
-          <%= image_helper product.alternate_front, class: 'product-shot', data: { front: image_url(product.alternate_front), angle: image_url(product.alternate_angle) } %>
+          <%= image_helper product.alternate_front, class: 'product-shot', data: { front: img_url_helper(product.alternate_front), angle: img_url_helper(product.alternate_angle) } %>
         </div>
       </div>
     </div>

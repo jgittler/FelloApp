@@ -19,10 +19,18 @@ module ApplicationHelper
   end
 
   def image_helper(name, options = {})
-    if Rails.env.produciton?
-      cl_image_tag name, options
-    else
+    if Rails.env.development?
       image_tag name, options
+    else
+      cl_image_tag name, options
+    end
+  end
+
+  def img_url_helper(name, options = {})
+    if Rails.env.development?
+      image_url name, options
+    else
+      Nokogiri::HTML(cl_image_tag name, options).css('img').map{ |i| i['src'] }.first
     end
   end
 end
