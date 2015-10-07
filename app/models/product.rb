@@ -16,30 +16,30 @@ class Product
   def konvoy
     @original = "Black"
     @alternate = "Tortoise Shell"
-    @original_front = "konvoy_front_black.jpg"
-    @original_angle = "konvoy_angle_black.jpg"
-    @alternate_front = "konvoy_front_tortoise.jpg"
-    @alternate_angle = "konvoy_angle_tortoise.jpg"
+    @original_front = "konvoy_black_front.png"
+    @original_angle = "konvoy_black_angle.png"
+    @alternate_front = "konvoy_tortoise_front.png"
+    @alternate_angle = "konvoy_tortoise_angle.png"
     @price = "price_2.png"
   end
 
   def fantom
     @original = "Black"
     @alternate = "Tortoise Shell"
-    @original_front = "fantom_front_black.jpg"
-    @original_angle = "fantom_angle_black.jpg"
-    @alternate_front = "fantom_front_tortoise.jpg"
-    @alternate_angle = "fantom_angle_tortoise.jpg"
+    @original_front = "fantom_black_front.png"
+    @original_angle = "fantom_black_angle.png"
+    @alternate_front = "fantom_tortoise_front.png"
+    @alternate_angle = "fantom_tortoise_angle.png"
     @price = "price_1.png"
   end
 
   def heron
     @original = "Green Lenses"
     @alternate = "Blue Lenses"
-    @original_front = "heron_front_green.jpg"
-    @original_angle = "heron_angle_green.jpg"
-    @alternate_front = "heron_front_blue.jpg"
-    @alternate_angle = "heron_angle_blue.jpg"
+    @original_front = "heron_green_front.png"
+    @original_angle = "heron_green_angle.png"
+    @alternate_front = "heron_blue_front.png"
+    @alternate_angle = "heron_blue_angle.png"
     @price = "price_1.png"
   end
 end
