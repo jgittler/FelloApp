@@ -6,8 +6,8 @@ module ApplicationHelper
   end
 
   def charity_text
-    "For every pair of sunglasses sold we donate $5 to help
-    the nearly 1 billion people around the world that don't have access to glasses."
+    "Approximately 670 million people worldwide are functionally blind or visually impaired
+    because they do not have a pair of eyeglasses."
   end
 
   def vosh_video
