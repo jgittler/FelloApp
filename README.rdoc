@@ -45,7 +45,7 @@ Please feel free to use a different markup language if you do not plan to run
   $('.Icon.Icon--favorite').each(function() { $(this).trigger('click') });
 
 From the bottom use:
-  var favs = $('.Icon.Icon--favorite').slice(Math.max($('.Icon.Icon--favorite').length - <n>, 1));
+  var favs = $('.HeartAnimation').slice(Math.max($('.HeartAnimation').length - <n>, 1));
   favs.each(function() { $(this).trigger('click') });
 
 ==Page Scroll Down
