@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- Facebook Pixel Code | Fello Busness Account -->
-  <% unless Rails.env.production? %>
+  <% if Rails.env.production? %>
     <script>
       !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -36,7 +36,7 @@
 <!-- End Facebook Pixel Code -->
 
 <!-- Facebook Pixel Code | Older Pixel -->
-  <% unless Rails.env.production? %>
+  <% if Rails.env.production? %>
     <script>
       !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
