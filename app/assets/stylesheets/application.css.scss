@@ -121,6 +121,10 @@ $gray: #999999;
   }
 }
 
+.navbar-default .navbar-nav>li>a:hover {
+  color: $blue;
+}
+
 .main-text {
   font-family: 'Josefin Sans', sans-serif;
 }
