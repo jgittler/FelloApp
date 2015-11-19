@@ -1,4 +1,12 @@
 class JumboImage
+  def self.survey
+    if Rails.env.production?
+      'http://res.cloudinary.com/hxeuqektg/image/upload/v1440575863/fello_pineapple.jpg'
+    else
+      'survey_bg.jpg'
+    end
+  end
+
   def self.about
     if Rails.env.production?
       'http://res.cloudinary.com/hxeuqektg/image/upload/v1440575863/fello_pineapple.jpg'

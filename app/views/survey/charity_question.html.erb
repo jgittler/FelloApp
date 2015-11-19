@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="jumbotron jumbo-survey jumbo-pic">
+    <div class="survey">
+      <div class="container">
+        <%= form_tag complete_survey_path, method: :post, remote: :true do %>
+          <%= label @question_type, @question, for: "answer" %>
+          <%= radio_button_tag "answer", "yes", false, class: "form-control" %>
+          <%= radio_button_tag "answer", "no", false, class: "form-control" %>
+          <%= submit_tag "Submit Answer" %> 
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
