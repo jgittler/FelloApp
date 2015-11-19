@@ -1,4 +1,5 @@
 @import "embedded_sheet.css";
+$blue: #1FA7D6;
 
 .jumbo-pic {
   background-repeat: no-repeat;
@@ -41,6 +42,21 @@
 
     @media(min-width: 768px) {
       font-size: 36px;
+    }
+  }
+}
+
+.call-to-action {
+  padding-top: 100px;
+  padding-bottom: 250px;
+
+  h2 {
+    color: $blue;
+    font-weight: 600;
+    margin-top: 35px;
+
+    @media(max-width: 768px) {
+      font-size: 20px;
     }
   }
 }
