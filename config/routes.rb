@@ -58,7 +58,9 @@ Rails.application.routes.draw do
   get "about",   to: "landing#about",   as: "about"
   get "charity", to: "landing#charity", as: "charity"
   get "share",   to: "landing#share",   as: "share"
-  post "lead_email", to: "landing#lead_email", as: "lead_email" 
+
+  post "lead_email", to: "email#lead_email", as: "lead_email"
+  post "email_from_survey", to: "email#email_from_survey", as: "email_from_survey"
 
   get "charity_question",  to: "survey#charity_question",  as: "charity_question"
   get "warranty_question", to: "survey#warranty_question", as: "warranty_question"

@@ -2,12 +2,30 @@
   <div class="jumbotron jumbo-survey jumbo-pic">
     <div class="survey">
       <div class="container">
-        <%= form_tag complete_survey_path, method: :post, remote: :true do %>
-          <%= label @question_type, @question, for: "answer" %>
-          <%= radio_button_tag "answer", "yes", false, class: "form-control" %>
-          <%= radio_button_tag "answer", "no", false, class: "form-control" %>
-          <%= submit_tag "Submit Answer" %> 
+        <h2 class="text-center"><%= @question %></h2>
+        <%= form_tag complete_survey_path, method: :post, remote: :true, id: "survey_answer" do %>
+          <br>
+          <div class="btn-holder col-xs-8">
+            <%= hidden_field_tag "Theme", @question_type %>
+            <%= hidden_field_tag "City", @address.city %>
+            <%= hidden_field_tag "Country", @address.country %>
+
+            <%= submit_tag "Yes", class: "yes btn btn-lg btn-success" %>
+            <%= submit_tag "No", class: "no btn btn-lg btn-danger" %>
+          </div>
         <% end %>
+
+        <div class="btn-holder col-xs-8">
+          <%= form_tag email_from_survey_path, method: :post, remote: :true, id: "survey_email" do %>
+            <%= email_field_tag "Email", nil, class: "form-control", placeholder: "email@example.com" %>
+
+            <%= hidden_field_tag "Theme", @question_type %>
+            <%= hidden_field_tag "City", @address.city %>
+            <%= hidden_field_tag "Country", @address.country %>
+
+            <%= submit_tag "Send", class: "btn btn-default form-control" %>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

@@ -1,4 +1,6 @@
 class LandingController < ApplicationController
+  ACTIVE_NAV_CLASS = "active"
+
   def kickstarter
     @about_active = ""
     @charity_active = ""
@@ -8,21 +10,15 @@ class LandingController < ApplicationController
   end
 
   def about
-    @about_active = "active"
+    @about_active = ACTIVE_NAV_CLASS
     @charity_active = ""
   end
 
   def charity
     @about_active = ""
-    @charity_active = "active"
+    @charity_active = ACTIVE_NAV_CLASS
   end
 
   def share
-  end
-
-  def lead_email
-    email = params[:email]
-    LeadMailer.email_me(email).deliver
-    render nothing: true, head: :ok
   end
 end
