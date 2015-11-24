@@ -22,21 +22,64 @@ $(document).ready(function() {
     interval: false
   }) 
 
-  $("form").on("ajax:success", function() {
-    $(this).find('input[name="email"]').val('');
-    $('.alert').text('Thank You');
-    $('.alert').show();
-    setTimeout(function(){
-      $('.alert').hide();
-    }, 2000);
-  });
-
-  $(".sm img").mouseover(function() { 
-    $(this).attr("src", $(this).data('alt'));
-  });
-  $(".sm img").mouseout(function() {
-    $(this).attr("src", $(this).data('main'));
-  });
-
 });
 
+$(".footer form").on("ajax:success", function() {
+  $(this).find('input[name="email"]').val('');
+
+  var $alert = $(this).siblings('.form-alert');
+  alertFade($alert, 'Thank You');
+});
+
+$("#survey_answer").on("ajax:success", function() {
+  var $alert = $(this).siblings(".h2");
+  alertFade($alert, "Thank you for your input.");
+  hideSurvey($(this));
+});
+
+$("#survey_email").on("ajax:success", function() {
+  var $alert = $(this).siblings(".h2");
+  hideEmail($(this));
+  alertFade($alert, "Thank you, you will here from us sometime soon.");
+});
+
+var alertFade = function(div, message) {
+  div.text(message);
+  div.removeClass('hidden');
+  setTimeout(function(){
+    div.fadeOut();
+  }, 2000);
+}
+
+var hideEmail = function(form) {
+  form.fadeOut();
+  form.remove();
+  $('.container.under').css('padding', '0px');
+
+  removeSurvey();
+}
+
+var hideSurvey = function(form) {
+  form.fadeOut();
+  form.remove();
+  form.css('padding-bottom', '0px');
+  $('.survey-question').fadeOut();
+  $('.container.under').css('margin-top', '0px');
+
+  removeSurvey();
+}
+
+var removeSurvey = function() {
+  if ($('.survey').find('form').length < 1) {
+    $('.survey').empty();
+    $('.survey').addClass('complete');
+    $('.survey').text('Thank you for completing our survey.');
+  }
+}
+
+$(".sm img").mouseover(function() {
+  $(this).attr("src", $(this).data('alt'));
+});
+$(".sm img").mouseout(function() {
+  $(this).attr("src", $(this).data('main'));
+});

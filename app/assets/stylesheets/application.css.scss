@@ -25,7 +25,7 @@ $gray: #999999;
   font-style: italic;
 }
 
-.col-sm-4 {
+.text-input {
 
   ::-webkit-input-placeholder {
      color: rgba($blue, .6);
@@ -161,4 +161,14 @@ $gray: #999999;
   img {
     height: 100%;
   }
+}
+
+.form-alert {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  color: $blue;
+  border-color: $blue;
+  background-color: rgba($blue, .4);
 }

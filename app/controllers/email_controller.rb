@@ -14,7 +14,7 @@ class EmailController < ApplicationController
   private
 
   def survey_email_params
-    params.permit(:Email, :Theme, :Country, :City)
+    params.permit(:email, :theme, :country, :city)
   end
 
   def email_param
