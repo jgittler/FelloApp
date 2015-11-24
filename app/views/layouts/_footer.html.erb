@@ -9,13 +9,13 @@
         </ul>
       </div>
 
-      <div class="col-sm-4 col-sm-offset-1">
+      <div class="col-sm-4 col-sm-offset-1 text-input">
         <h3>Want More Info?</h3>
         <%= form_tag lead_email_path, method: :post, remote: true do %>
           <%= email_field_tag 'email', '', class: "sharp form-control email", required: true, placeholder: "Email Address" %>
           <%= image_submit_tag "email.png", class: "plane" %>
         <% end %> 
-        <div class="alert sharp" role="alert"></div>
+        <div class="form-alert alert sharp" role="alert"></div>
       </div>
 
       <div class="col-sm-3 col-sm-offset-1">

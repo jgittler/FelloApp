@@ -59,7 +59,14 @@ Rails.application.routes.draw do
   get "charity", to: "landing#charity", as: "charity"
   get "share",   to: "landing#share",   as: "share"
 
-  post "lead_email", to: "landing#lead_email", as: "lead_email" 
+  post "lead_email", to: "email#lead_email", as: "lead_email"
+  post "email_from_survey", to: "email#email_from_survey", as: "email_from_survey"
+
+  get "charity_question",  to: "survey#charity_question",  as: "charity_question"
+  # get "warranty_question", to: "survey#warranty_question", as: "warranty_question"
+  # get "made_question",     to: "survey#made_question",     as: "made_question"
+  # get "quality_question",  to: "survey#quality_question",  as: "quality_question"
+  post "complete_survey",  to: "survey#complete_survey",   as: "complete_survey"
 
   get "sitemap.xml", to: "sitemap#show", format: "xml", as: "sitemap"
 end
