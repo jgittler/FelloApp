@@ -52,7 +52,12 @@ $blue-gray: #5F7C86;
   .survey-question {
     color: white;
     margin: 25px 25px 40px 24px;
-    line-height: 1.6;
+    font-size: 18px;
+
+    @media(min-width: 992px) {
+      line-height: 1.6;
+      font-size: 24px;
+    }
   }
 
   .btn-holder {

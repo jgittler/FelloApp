@@ -4,7 +4,10 @@ class SurveyController < ApplicationController
 
   def charity_question
     @question_type = "Charity"
-    @question = "Fello donates $5 towards providing eye-care around the world with each purchase. Do feel this a good cause, and is something that draws you to Fello?"
+    @question = "
+      With each pair of sunglasses sold, we donate $5 towards providing eye-care to those in need.
+      Would you be interested in supporting our cause?
+    "
   end
 
   # def made_question
@@ -29,7 +32,7 @@ class SurveyController < ApplicationController
   private
 
   def set_shared_inputs!
-    @email_message = "Lorem ipsum dolor sit amet, sociosqu sapien erat ultricies, nec lectus fusce donec pretium. At neque purus vestibulum a, libero metus massa consequat, a posuere, nonummy curabitur taciti, integer eget nibh vel diam ut. Viverra nascetur tincidunt, sed ligula nunc elit, imperdiet non proin lacus hac quisque convallis."
+    @email_message = "Enter your email if you'd like to be informed when we launch."
     @address = Geocoder.search(request.remote_ip).first
   end
 
