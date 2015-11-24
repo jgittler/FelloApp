@@ -1,7 +1,7 @@
 class JumboImage
   def self.survey
     if Rails.env.production?
-      'http://res.cloudinary.com/hxeuqektg/image/upload/v1440575863/fello_pineapple.jpg'
+      'http://res.cloudinary.com/hxeuqektg/image/upload/v1448385711/survey_bg.jpg'
     else
       'survey_bg.jpg'
     end
@@ -23,7 +23,7 @@ class JumboImage
     end
   end
 
-  def self.cate_lg################
+  def self.cate_lg
     if Rails.env.production?
       "http://res.cloudinary.com/hxeuqektg/image/upload/v1441852503/cate_lg.jpg"
     else
