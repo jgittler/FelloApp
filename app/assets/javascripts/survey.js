@@ -6,6 +6,10 @@ $("#survey_answer").on("click", ":submit", function(e) {
   answer += $(this).val();
 });
 
+var device = "Desktop";
+if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  device = "Mobile";
+}
 // Bind to the submit event of our form
 $("#survey_answer").submit(function(event){
 
@@ -20,9 +24,10 @@ $("#survey_answer").submit(function(event){
     var $inputs = $form.find("input");
 
     // Serialize the data in the form
-    var serializedData = $form.serialize() + "&Answer=" + answer;
+    var serializedData = $form.serialize() + "&Answer=" + answer + "&Device=" + device;
 
     answer = "";
+    device = "";
 
     // Let's disable the inputs for the duration of the Ajax request.
     // Note: we disable elements AFTER the form data has been serialized.

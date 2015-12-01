@@ -1,6 +1,5 @@
 class SurveyController < ApplicationController
   before_action :set_shared_inputs!, expect: :complete_survey
-  # before_action :check_referer, expect: :complete_survey
 
   def charity_question
     @question_type = "Charity"
@@ -14,12 +13,17 @@ class SurveyController < ApplicationController
   #   @question_type = "Made"
   #   @question = "Do you like it?"
   # end
-  #
-  # def warranty_question
-  #   @question_type = "Warranty"
-  #   @question = "Do you like it?"
-  # end
-  #
+
+  def warranty_question
+    @question_type = "Warranty"
+    @question = "
+      What if you could use Social Media to protect your products!
+      Have your sunglasses ever been lost, stolen, or broken?
+      We are creating a company that will replace your Fello Sunglasses
+      for free if you share our post on Facebook.
+    "
+  end
+
   # def quality_question
   #   @question_type = "Quality"
   #   @question = "Do you like it?"
@@ -35,12 +39,4 @@ class SurveyController < ApplicationController
     @email_message = "Enter your email if you'd like to be informed when we launch."
     @address = Geocoder.search(request.remote_ip).first
   end
-
-  # def check_referer
-  #   if Rails.env.production?
-  #     unless request.env["HTTP_REFERER"]
-  #       redirect_to kickstarter_path and return
-  #     end
-  #   end
-  # end
 end
