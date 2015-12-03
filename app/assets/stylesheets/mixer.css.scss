@@ -1,6 +1,76 @@
 $gray: #999999;
 $blue: #1FA7D6;
 
+.charity-stats {
+  line-height: 1.7;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &.counter {
+    color: lighten(black, 35%);
+    background-color: rgba($blue, 0.1);
+
+    .count {
+      font-size: 92px;
+      text-align: right;
+      color: $blue;
+    }
+
+    .v-center {
+
+      h1 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .partner {
+    text-align: left;
+    margin-bottom: 35px;
+    line-height: inherit;
+  }
+
+  hr {
+    border-color: rgba($blue, 0.5);
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .vosh-logo {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .btn {
+
+    a {
+      color: white;
+    }
+  }
+
+  .row-eq-height {
+
+    p {
+      margin: 0;
+      font-size: 16px;
+
+      &.h1 {
+        font-size: 62px;
+      }
+
+      .highlight {
+        color: $blue;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
 .mixer {
   margin: 15px 0px 15px -15px;
 
