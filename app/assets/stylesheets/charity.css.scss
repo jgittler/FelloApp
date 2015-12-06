@@ -79,9 +79,8 @@ $blue: #1FA7D6;
         min-width: 120px;
       }
 
-      .highlight {
+      &.highlight {
         color: $blue;
-        font-weight: bold;
       }
     }
   }
