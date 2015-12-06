@@ -1,0 +1,152 @@
+<div class="container fello-text charity-stats">
+  <div class="row">
+    <h2 class="text-center">
+      Devoted To Change
+    </h2>
+  </div>
+
+  <div class="row">
+    <h4 class="text-center col-md-8 col-md-offset-2 partner">
+      Fello was founded with a dedication to support those in need.
+      We are humbled by the opportunity to work with VOSH International,
+      a purposeful organization committed to providing eye care around the world.
+    </h4>
+  </div>
+
+  <div class="row row-eq-height">
+    <div class="col-md-2 col-md-offset-2 v-center">
+      <p class="h1 highlight">1 <small>in</small> 7</p>
+    </div>
+
+    <div class="col-md-6 v-center">
+      <p>
+        1 in 7 people across the globe are unable to learn or work because they can't see clearly.
+      </p>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="row row-eq-height">
+    <div class="col-md-2 col-md-offset-2 v-center">
+      <p class="h1 highlight">153</p>
+    </div>
+
+    <div class="col-md-6 v-center">
+      <p>
+        153 million people suffer from
+        Uncorrected Refractive Error (URE),
+        which is an easily preventable cause of vision loss.
+      </p>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="row row-eq-height">
+    <div class="col-md-2 col-md-offset-2 v-center">
+      <p class="h1 highlight">$5.00</p>
+    </div>
+
+    <div class="col-md-6 v-center">
+      <p>
+        $5 can help those in need by providing an individual the gift of sight.
+        Allowing them to regain their independence and reimagine the future.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="charity-stats counter">
+  <div class="container fello-text">
+    <div class="row">
+      <h2 class="text-center">Fight Blindness Together</h2>
+    </div>
+
+    <div class="row">
+      <p class="col-md-8 col-md-offset-2">
+        For every pair of sunglasses sold,
+        Fello donates $5 to VOSH.
+        You can also accompany us in our pursuit to raise awareness and
+        make a difference by contributing <%= link_to "here", "http://www.vosh.org/donate", target: :blank %>.
+      </p>
+    </div>
+
+    <div class="row row-eq-height">
+      <div class="col-md-3 col-sm-12 col-md-offset-3">
+        <h1 class="count">3</h1>
+      </div>
+
+      <div class="col-md-3 col-sm-12 v-center">
+        <h1 class="hidden-xs">Lives</h1><h1 class="hidden-xs">Changed</h1>
+        <h1 class="visible-xs text-center">Lives Changed</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOR LARGE SCREENS -->
+<div class="row fello-text row-eq-height hidden-md hidden-sm hidden-xs">
+  <%= image_helper "eye_cover.jpg", class: "full-h col-md-6 no-pad" %>
+
+  <div class="col-md-6 charity-stats v-center">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-12 text-center">
+        <%= image_helper "vosh_logo.jpg", class: "vosh-logo" %>
+      </div>
+
+      <p>
+        VOSH helps restore sight to those in need through sight-saving surgery,
+        medical treatment, or prescription glasses.
+        Their members are doctors and volunteers who organize eye care clinics around the world.
+        Through these clinics VOSH International has helped restore sight
+        to more than 1,000,000 people worldwide.
+      </p>
+
+      <br />
+
+      <%= link_to "http://www.vosh.org", target: :blank do %>
+        <div class="hidden-xs hidden-sm col-md-12 text-center btn btn-primary">
+          <h4>Visit Site</h4>
+        </div>
+        <div class="visible-xs visible-sm full text-center btn btn-primary">
+          <h4>Visit Site</h4>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<!-- FOR NON LARGE SCREENS -->
+<div class="row hidden-lg">
+  <%= image_helper "eye_cover.jpg", class: "full-h col-xs-12 no-pad" %>
+</div>
+
+<div class="row fello-text hidden-lg">
+  <div class="col-xs-12 charity-stats v-center">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-12 text-center">
+        <%= image_helper "vosh_logo.jpg", class: "vosh-logo" %>
+      </div>
+
+      <p>
+        VOSH helps restore sight to those in need through sight-saving surgery,
+        medical treatment, or prescription glasses.
+        Their members are doctors and volunteers who organize eye care clinics around the world.
+        Through these clinics VOSH International has helped restore sight
+        to more than 1,000,000 people worldwide.
+      </p>
+
+      <br />
+
+      <%= link_to "http://www.vosh.org", target: :blank do %>
+        <div class="hidden-xs hidden-sm col-md-12 text-center btn btn-primary">
+          <h4>Visit Site</h4>
+        </div>
+        <div class="visible-xs visible-sm full text-center btn btn-primary">
+          <h4>Visit Site</h4>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
