@@ -9,10 +9,13 @@ class SurveyController < ApplicationController
     "
   end
 
-  # def made_question
-  #   @question_type = "Made"
-  #   @question = "Do you like it?"
-  # end
+  def made_question
+    @question_type = "Made"
+    @question = "
+      Fello is an American brand.
+      Do you like to support American companies?
+    "
+  end
 
   def warranty_question
     @question_type = "Warranty"
@@ -21,6 +24,7 @@ class SurveyController < ApplicationController
       Have your sunglasses ever been lost, stolen, or broken?
       We are creating a company that will replace your Fello Sunglasses
       for free if you share our post on Facebook.
+      Would you be excited for this warranty?
     "
   end
 

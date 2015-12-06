@@ -28,4 +28,8 @@
     <loc>http://www.felloeyewear.com/warranty_question</loc>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>http://www.felloeyewear.com/made_question</loc>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
