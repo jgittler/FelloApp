@@ -9,14 +9,15 @@
             <%= hidden_field_tag "Theme", @question_type %>
             <%= hidden_field_tag "City", @address.city %>
             <%= hidden_field_tag "Country", @address.country %>
+            <%= hidden_field_tag "Referer", @referer %>
 
             <div class="row">
               <div class="form-group col-xs-12 col-md-5 col-md-offset-1 text-center">
-                <%= submit_tag "Yes", class: "yes btn btn-lg btn-success" %>
+                <%= submit_tag @answers.one, class: "yes btn btn-lg btn-success", style: @css %>
               </div>
 
               <div class="form-group col-xs-12 col-md-6 text-center">
-                <%= submit_tag "No", class: "no btn btn-lg btn-danger" %>
+                <%= submit_tag @answers.two, class: "no btn btn-lg btn-danger", style: @css %>
               </div>
             </div>
           </div>

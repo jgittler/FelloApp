@@ -28,10 +28,16 @@ class SurveyController < ApplicationController
     "
   end
 
-  # def quality_question
-  #   @question_type = "Quality"
-  #   @question = "Do you like it?"
-  # end
+  def quality_question
+    @question_type = "Quality"
+    @question = "
+      Do you buy sunglasses for the brand name or
+      for their style and quality?
+    "
+    @answers.one = "Brand Name"
+    @answers.two = "Quality/Style"
+    @css = "font-size: 14px; color: black; border-color: black;"
+  end
 
   def complete_survey
     no_view
@@ -42,5 +48,7 @@ class SurveyController < ApplicationController
   def set_shared_inputs!
     @email_message = "Enter your email if you'd like to be informed when we launch."
     @address = Geocoder.search(request.remote_ip).first
+    @referer = request.env["HTTP_REFERER"] || "none"
+    @answers = OpenStruct.new(one: "Yes", two: "No")
   end
 end
