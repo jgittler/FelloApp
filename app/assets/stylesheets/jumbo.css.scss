@@ -13,7 +13,7 @@ $blue: #1FA7D6;
   margin-bottom: 0px;
 
   &.bb {
-    background-color: black;
+    background-color: lighten(black, 5%);
   }
 }
 

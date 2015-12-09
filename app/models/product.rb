@@ -20,7 +20,7 @@ class Product
     @original_angle = "konvoy_black_angle.png"
     @alternate_front = "konvoy_tortoise_front.png"
     @alternate_angle = "konvoy_tortoise_angle.png"
-    @price = "price_2.png"
+    @price = "$71"
   end
 
   def fantom
@@ -30,7 +30,7 @@ class Product
     @original_angle = "fantom_black_angle.png"
     @alternate_front = "fantom_tortoise_front.png"
     @alternate_angle = "fantom_tortoise_angle.png"
-    @price = "price_1.png"
+    @price = "$68"
   end
 
   def heron
@@ -40,6 +40,6 @@ class Product
     @original_angle = "heron_green_angle.png"
     @alternate_front = "heron_blue_front.png"
     @alternate_angle = "heron_blue_angle.png"
-    @price = "price_1.png"
+    @price = "$68"
   end
 end

@@ -5,4 +5,10 @@ $(document).ready(function() {
   $("img.product-shot").mouseout(function() {
     $(this).attr("src", $(this).data('front'));
   });
+
+  $(".close-up li.h4").on("click", '.btn', function() {
+    var current = $(this).addClass("active");
+    var prev = current.parent().siblings().find('.btn');
+    prev.removeClass("active");
+  });
 }); 

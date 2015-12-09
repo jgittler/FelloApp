@@ -17,8 +17,34 @@
 $blue: #1FA7D6;
 $gray: #999999;
 
-@import "landing.css";
-@import "footer.css";
+@mixin display-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row-eq-height-md {
+
+  @media(min-width: 992px) {
+    @include display-flex;
+  }
+}
+
+.row-eq-height-xs {
+  @include display-flex;
+}
+
+.row-eq-height {
+
+  @media(min-width: 768px) {
+    @include display-flex;
+  }
+}
+
+.header-eq-marg {
+  margin-top: 10px;
+}
 
 .working {
   color: $gray;

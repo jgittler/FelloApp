@@ -1,16 +1,16 @@
-<div class="container main-text">
-  <div class="row row-eq-height">
-    <div class="col-sm-5 col-xs-12 close-up subtab">
+<div class="main-text">
+  <div class="row row-eq-height-md">
+    <div class="col-md-4 col-md-offset-1 col-xs-12 close-up subtab">
       <!-- Nav tabs -->
       <ul class="nav nav-tabs nav-justified" role="tablist">
         <li role="presentation" class="active h4">
-          <a href="#first_<%= product.name %>" class="sharp" aria-controls="home" role="tab" data-toggle="tab">
+          <a href="#first_<%= product.name %>" class="sharp btn active" aria-controls="home" role="tab" data-toggle="tab">
             <%= product.original %>
           </a>
         </li>
 
         <li role="presentation" class="h4">
-          <a href="#second_<%= product.name %>" class="sharp" aria-controls="profile" role="tab" data-toggle="tab">
+          <a href="#second_<%= product.name %>" class="sharp btn" aria-controls="profile" role="tab" data-toggle="tab">
             <%= product.alternate %>
           </a>
         </li>
@@ -27,18 +27,27 @@
       </div>
     </div>
 
-    <div class="col-xs-1 v-divider hidden-xs">
+    <div class="col-xs-1 v-divider hidden-xs hidden-sm">
     </div>
-    <div class="col-xs-1 hidden-xs">
-    </div>
-    <div class="h-divider visible-xs"></div>
+    <div class="h-divider visible-xs visible-sm"></div>
 
-    <div class="col-sm-5 col-xs-12 text-center buy">
-      <%= image_helper product.price, class: 'pull-left' %>
-      <%= image_helper 'fittings.jpg' %>
-      <div class="soon sharp full">
-        <span>Coming to Kickstarter in March</span>
+    <div class="col-md-4 col-md-offset-1 col-xs-8 col-xs-offset-2 v-center buy">
+      <div class="row row-eq-height-xs">
+        <%= image_helper 'kickstarter-logo-square.jpg', class: 'v-center col-xs-4' %>
+
+        <div class="col-xs-8 v-center">
+          <h4 class="header-eq-marg">
+            The Fello <%= product.name.capitalize %> line will be available on Kickstarter in March
+            for the discounted price of <%= product.price %>.
+          </h4>
+        </div>
       </div>
+
+      <%= link_to "http://www.kickstarter.com", target: :blank do %>
+        <div class="col-xs-12 text-center btn btn-primary sharp">
+          <h4>Checkout Kickstarter</h4>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
