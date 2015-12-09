@@ -66,6 +66,7 @@ Rails.application.routes.draw do
   get "warranty_question", to: "survey#warranty_question", as: "warranty_question"
   get "made_question",     to: "survey#made_question",     as: "made_question"
   get "quality_question",  to: "survey#quality_question",  as: "quality_question"
+  get "celeb_question",    to: "survey#celeb_question",    as: "celeb_question"
   post "complete_survey",  to: "survey#complete_survey",   as: "complete_survey"
 
   get "sitemap.xml", to: "sitemap#show", format: "xml", as: "sitemap"

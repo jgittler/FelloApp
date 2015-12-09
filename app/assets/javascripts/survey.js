@@ -1,3 +1,11 @@
+var trackSurveyCompletion = function() {
+  fbq.push(['track', 'CompleteRegistration']);
+}
+
+$(".yes, .no").on("click", function() {
+  trackSurveyCompletion();
+});
+
 // Variable to hold request
 var request;
 var answer = "";

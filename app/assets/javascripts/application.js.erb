@@ -77,6 +77,14 @@ var removeSurvey = function() {
   }
 }
 
+var trackEmailSubmission = function() {
+  fbq.push(['track', 'Lead']);
+}
+
+$(".plane, #survey_email input[type='submit']").on("click", function() {
+  EmailSubmission();
+});
+
 $(".sm img").mouseover(function() {
   $(this).attr("src", $(this).data('alt'));
 });

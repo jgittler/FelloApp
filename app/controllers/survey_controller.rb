@@ -28,6 +28,17 @@ class SurveyController < ApplicationController
     "
   end
 
+  def celeb_question
+    @question_type = "Celeb"
+    @question = "
+      What if you could use Social Media to protect your products!
+      Have your sunglasses ever been lost, stolen, or broken?
+      We are creating a company that will replace your Fello Sunglasses
+      for free if you share our post on Facebook.
+      Would you share us on Facebook to earn a free pair?
+    "
+  end
+
   def quality_question
     @question_type = "Quality"
     @question = "

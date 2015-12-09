@@ -36,4 +36,8 @@
     <loc>http://www.felloeyewear.com/quality_question</loc>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>http://www.felloeyewear.com/celeb_question</loc>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
