@@ -1,16 +1,12 @@
 <div class="row">
   <div class="jumbotron jumbo-survey jumbo-pic">
     <div class="survey main-text">
-      <h3 class="survey-question text-center"><%= @question %></h3>
+      <h3 class="survey-question text-center question"><%= @question %></h3>
       <div class="container">
         <div class="h2 text-center hidden" role="alert"></div>
         <%= form_tag complete_survey_path, method: :post, remote: :true, id: "survey_answer" do %>
           <div class="btn-holder col-xs-12 col-md-8">
-            <%= hidden_field_tag "Theme", @question_type %>
-            <%= hidden_field_tag "City", @address.city %>
-            <%= hidden_field_tag "State", @address.state %>
-            <%= hidden_field_tag "Country", @address.country %>
-            <%= hidden_field_tag "Referer", @referer %>
+            <%= render 'hidden_inputs' %>
 
             <div class="row">
               <div class="form-group col-xs-12 col-md-5 col-md-offset-1 text-center">
@@ -19,6 +15,28 @@
 
               <div class="form-group col-xs-12 col-md-6 text-center">
                 <%= submit_tag @answers.two, class: "no btn btn-lg btn-danger", style: @css %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+
+      <h3 class="survey-question text-center price-question">How much do you normally pay for nice sunglasses?</h3>
+      <div class="container slider">
+        <div class="h2 text-center hidden" role="alert"></div>
+        <%= form_tag complete_survey_path, method: :post, remote: :true, id: "price_answer" do %>
+          <div class="btn-holder col-xs-12 col-md-8">
+            <%= render 'hidden_inputs' %>
+
+            <div class="row">
+              <div class="form-group col-xs-12">
+                <%= range_field_tag "Price", 75, in: 0..350, step: 1, class: "price-slider" %>
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 text-center">
+                <%= number_field_tag "price_number", 75, class: "text-center form-control sharp" %>
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 text-center">
+                <%= submit_tag "Submit Price", class: "btn btn-default sharp form-control" %>
               </div>
             </div>
           </div>
@@ -38,9 +56,7 @@
                 <%= email_field_tag "email", nil, class: "email sharp form-control", required: true, placeholder: "email@example.com" %>
               </div>
 
-              <%= hidden_field_tag "theme", @question_type %>
-              <%= hidden_field_tag "city", @address.city %>
-              <%= hidden_field_tag "country", @address.country %>
+              <%= render 'hidden_inputs' %>
 
               <div class="form-group col-sm-3 col-xs-12">
                 <%= submit_tag "Send", class: "btn btn-default sharp form-control" %>

@@ -31,7 +31,7 @@ $(".footer form").on("ajax:success", function() {
   alertFade($alert, 'Thank You');
 });
 
-$("#survey_answer").on("ajax:success", function() {
+$("#survey_answer, #price_answer").on("ajax:success", function() {
   var $alert = $(this).siblings(".h2");
   alertFade($alert, "Thank you for your input.");
   hideSurvey($(this));
@@ -61,15 +61,24 @@ var hideEmail = function(form) {
 
 var hideSurvey = function(form) {
   form.fadeOut();
+  form.css('padding', '0px');
+  var container = form.parent('.container');
+  var $container = $(container);
+
+  if (form.attr("id") == "price_answer") {
+    $(".price-question").fadeOut();
+  } else {
+    $(".question").fadeOut();
+  }
+
   form.remove();
-  form.css('padding-bottom', '0px');
-  $('.survey-question').fadeOut();
-  $('.container.under').css('margin-top', '0px');
+  $container.remove();
 
   removeSurvey();
 }
 
 var removeSurvey = function() {
+  console.log(($('.survey').find('form').length < 1));
   if ($('.survey').find('form').length < 1) {
     $('.survey').empty();
     $('.survey').addClass('complete');
