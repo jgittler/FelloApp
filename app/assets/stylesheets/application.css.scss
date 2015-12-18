@@ -17,6 +17,18 @@
 $gray: #999999;
 $blue: #1FA7D6;
 
+.white {
+  color: white;
+}
+
+.blue {
+  color: $blue;
+}
+
+.gray {
+  color: $gray;
+}
+
 @mixin display-flex {
   display: -webkit-box;
   display: -webkit-flex;
