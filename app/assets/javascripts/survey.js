@@ -1,3 +1,4 @@
+// Pixel Tracking
 $("#Price").on('change', function() {
   $("#price_number").val($(this).val());
 });
@@ -17,6 +18,43 @@ $(".yes, .no").on("click", function() {
 });
 var trackSurveyCompletion = function() {
   fbq.push(['track', 'CompleteRegistration']);
+}
+
+// Set Margins For Prices
+$(document).ready(function() {
+  setPrices();
+});
+
+$(window).resize(function() {
+  setPrices();
+});
+
+var setPrices = function() {
+  var sliderWidth = $("#Price").width();
+  var felloNum = sliderWidth * (71/400);
+  var oakleyNum = sliderWidth * (100/400);
+  var raybanNum = sliderWidth * (175/400);
+  var pradaNum = sliderWidth * (250/400);
+  var persolNum = sliderWidth * (300/400);
+
+  var priceArr = [
+    [$(".fello"), felloNum, 0],
+    [$(".oakley"), oakleyNum, felloNum],
+    [$(".rayban"), raybanNum, oakleyNum],
+    [$(".prada"), pradaNum, raybanNum],
+    [$(".persol"), persolNum, pradaNum]
+  ]
+
+  $(priceArr).each(function() {
+    setPriceMargins(this[0], this[1], this[2]);
+  });
+}
+
+var setPriceMargins = function(price, num, prevNum) {
+  var offset = 20;
+  var margin = num - (offset + prevNum);
+  console.log(margin);
+  price.css("margin-left", margin);
 }
 
 // Variable to hold request

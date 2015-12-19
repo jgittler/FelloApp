@@ -30,13 +30,19 @@
 
             <div class="row">
               <div class="form-group col-xs-12">
-                <span class="pull-left white">$0</span><span class="pull-right white">$350</span>
-                <%= range_field_tag "Price", 75, in: 0..350, step: 1, class: "price-slider" %>
+                <span class="white pull-left">$0</span>
+                <span class="fello blue compete-price">Fello<br />$71</span>
+                <span class="oakley compete-price hidden-xs">Oakley<br />$100</span>
+                <span class="rayban compete-price">Rayban<br />$175</span>
+                <span class="prada compete-price">Prada<br />$250</span>
+                <span class="persol compete-price">Persol<br />$301</span>
+                <span class="white pull-right">$400</span>
+                <%= range_field_tag "Price", 71, in: 0..400, step: 1, class: "price-slider" %>
               </div>
               <div class="form-group col-xs-12 col-sm-6 text-center">
                 <div class="input-group">
                   <span class="input-group-addon sharp">$</span>
-                  <input id="price_number" type="number" value="75" min="0" max="350" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="sharp form-control currency">
+                  <input id="price_number" type="number" value="71" min="0" max="400" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="sharp form-control currency">
                   </input>
                 </div>
               </div>

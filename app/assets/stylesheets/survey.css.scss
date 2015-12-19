@@ -3,12 +3,31 @@ $gray: #999999;
 $blue-gray: #5F7C86;
 
 .survey {
-  margin: 5% 15% 25% 15%;
   background-color: $blue-gray;
   opacity: 0.95;
   padding-top: 15px;
+  margin: 5%;
+
+  @media(min-width:768px) {
+    margin: 5% 15% 25% 15%;
+  }
 
   .slider {
+
+    .form-group .white {
+      @media(max-width: 768px) {
+        font-size: 10px;
+      }
+    }
+
+    .compete-price {
+      float: left;
+      font-size: 7px;
+
+      @media(min-width: 768px) {
+        font-size: 10px;
+      }
+    }
 
     input {
       color: $blue;
