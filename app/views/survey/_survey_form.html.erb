@@ -9,11 +9,11 @@
             <%= render 'hidden_inputs' %>
 
             <div class="row">
-              <div class="form-group col-xs-12 col-md-5 col-md-offset-1 text-center">
+              <div class="form-group col-xs-6 text-center">
                 <%= submit_tag @answers.one, class: "yes btn btn-lg btn-success", style: @css %>
               </div>
 
-              <div class="form-group col-xs-12 col-md-6 text-center">
+              <div class="form-group col-xs-6 text-center">
                 <%= submit_tag @answers.two, class: "no btn btn-lg btn-danger", style: @css %>
               </div>
             </div>
@@ -22,30 +22,46 @@
       </div>
 
       <h3 class="survey-question text-center price-question">How much do you normally pay for nice sunglasses?</h3>
-      <div class="container slider">
+      <div class="container slider-wrap">
         <div class="h2 text-center hidden" role="alert"></div>
         <%= form_tag complete_survey_path, method: :post, remote: :true, id: "price_answer" do %>
           <div class="btn-holder col-xs-12 col-md-8">
             <%= render 'hidden_inputs' %>
 
             <div class="row">
-              <div class="form-group col-xs-12">
-                <span class="white pull-left">$0</span>
-                <span class="fello blue compete-price">Fello<br />$71</span>
-                <span class="oakley compete-price hidden-xs">Oakley<br />$100</span>
-                <span class="rayban compete-price">Rayban<br />$175</span>
-                <span class="prada compete-price">Prada<br />$250</span>
-                <span class="persol compete-price">Persol<br />$300</span>
-                <span class="white pull-right">$400</span>
-                <%= range_field_tag "Price", 71, in: 0..400, step: 1, class: "price-slider" %>
-              </div>
-              <div class="form-group col-xs-12 col-sm-6 text-center">
+              <div class="visible-xs form-group col-xs-12 text-center">
                 <div class="input-group">
                   <span class="input-group-addon sharp">$</span>
-                  <input id="price_number" type="number" value="71" min="0" max="400" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="sharp form-control currency">
+                  <input type="number" value="71" min="0" max="400" step="1.00" data-number-to-fixed="2" data-number-stepfactor="100" class="sharp form-control currency price_number">
                   </input>
                 </div>
               </div>
+
+            <div class="form-group col-xs-12">
+              <input
+                class="slider"
+                type="text"
+                data-slider-ticks="[0, 71, 150, 230, 300, 400]"
+                data-slider-ticks-labels='[
+                  "$0",
+                  "Fello<br />$71",
+                  "Rayban<br />$150",
+                  "Prada<br />$230",
+                  "Persol<br />$300",
+                  "$400"
+                ]'
+                data-slider-ticks-snap-bounds="5"
+              />
+            </div>
+
+            <div class="hidden-xs form-group col-xs-12 col-sm-6 text-center">
+              <div class="input-group">
+                <span class="input-group-addon sharp">$</span>
+                <input type="number" value="71" min="0" max="400" step="1.00" data-number-to-fixed="2" data-number-stepfactor="100" class="sharp form-control currency price_number">
+                </input>
+              </div>
+            </div>
+
               <div class="form-group col-xs-12 col-sm-6 text-center">
                 <%= submit_tag "Submit Price", class: "btn btn-default sharp form-control" %>
               </div>

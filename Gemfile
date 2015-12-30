@@ -34,6 +34,7 @@ gem 'geocoder'
 # gem 'capistrano-rails', group: :development
 
 gem 'twitter-bootstrap-rails', git: 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem "compass-rails", github: "Compass/compass-rails", branch: "master"
 
 group :production do
   gem 'rails_12factor'
