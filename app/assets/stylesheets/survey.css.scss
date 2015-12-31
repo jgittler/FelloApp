@@ -31,19 +31,9 @@ $blue-gray: #5F7C86;
       }
     }
 
-    .form-group .white {
+    .slider-tick-label {
       @media(max-width: 768px) {
-        font-size: 10px;
-      }
-    }
-
-    .compete-price {
-      float: left;
-      font-size: 7px;
-      margin-bottom: 5px;
-
-      @media(min-width: 768px) {
-        font-size: 10px;
+        font-size: 11px !important;
       }
     }
 
