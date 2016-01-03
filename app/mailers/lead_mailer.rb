@@ -7,7 +7,7 @@ class LeadMailer < ApplicationMailer
   end
 
   def email_from_survey(contact)
-    @email = contact[:Email]
+    @email = contact[:email]
     @theme = contact[:Theme]
     @country = contact[:Country]
     @city = contact[:City]
