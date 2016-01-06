@@ -10,6 +10,7 @@ class LeadMailer < ApplicationMailer
     @email = contact[:email]
     @theme = contact[:Theme]
     @country = contact[:Country]
+    @state = contact[:State]
     @city = contact[:City]
     @referer = contact[:Referer]
 
