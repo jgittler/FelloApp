@@ -48,5 +48,13 @@ From the bottom use:
   var favs = $('.HeartAnimationContainer').slice(Math.max($('.HeartAnimationContainer').length - <n>, 1));
   favs.each(function() { $(this).trigger('click') });
 
+==Facebook Commenters
+  var names = [];
+  var links = document.getElementsByClassName("UFICommentActorName");
+  for (i = 0; i < s.length; i++) { 
+    names.push(links[i].getAttribute("href"));
+  }
+  names.join();
+
 ==Page Scroll Down
   $(document).scrollTop($(document).scrollTop()+$(window).height());
