@@ -1,5 +1,6 @@
 @import "embedded_sheet.css";
 $blue: #1FA7D6;
+$offblack: #0d0d0d;
 
 .jumbo-pic {
   background-repeat: no-repeat;
@@ -13,7 +14,7 @@ $blue: #1FA7D6;
   margin-bottom: 0px;
 
   &.bb {
-    background-color: lighten(black, 5%);
+    background-color: $offblack;
   }
 }
 

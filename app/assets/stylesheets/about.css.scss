@@ -1,9 +1,10 @@
 $gray: #999999;
+$offblack: #0d0d0d;
 
 .stripe {
   margin: 0px;
   padding: 0px;
-  background-color: black;
+  background-color: $offblack;
   color: white;
 
   h2, h3 {
