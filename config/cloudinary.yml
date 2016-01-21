@@ -5,15 +5,18 @@ development:
   api_secret: mJ-RSxlS8gYcZCphC6oEhOvO4OA
   enhance_image_tag: true
   static_image_support: false
+  cdn_subdomain: true
 production:
   cloud_name: hxeuqektg
   api_key: '776752895689697'
   api_secret: mJ-RSxlS8gYcZCphC6oEhOvO4OA
   enhance_image_tag: true
   static_image_support: true
+  cdn_subdomain: true
 test:
   cloud_name: hxeuqektg
   api_key: '776752895689697'
   api_secret: mJ-RSxlS8gYcZCphC6oEhOvO4OA
   enhance_image_tag: true
   static_image_support: false
+  cdn_subdomain: true

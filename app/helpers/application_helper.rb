@@ -5,7 +5,7 @@ module ApplicationHelper
     end
   end
 
-  def image_helper(name, options = {})
+  def image_helper(name, options = {cdn_subdomain: true})
     if Rails.env.development?
       image_tag name, options
     else
@@ -13,7 +13,7 @@ module ApplicationHelper
     end
   end
 
-  def img_url_helper(name, options = {})
+  def img_url_helper(name, options = {cdn_subdomain: true})
     if Rails.env.development?
       image_url name, options
     else
