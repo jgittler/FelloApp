@@ -65,12 +65,14 @@ From the bottom use:
     $a = $(a);
     var src = $a.attr("href");
     $a.replaceWith("<img src=" + src + "></img>")
-    var imgs = $("img");
-    for (i = 0; i < imgs.length; i++) {
-      var $img = $(imgs[i]);
-      if ($img.width() > 1060 || $img.width() < 500) { $img.remove() };
-    };
   });
+  var imgs = $("img");
+  for (i = 0; i < imgs.length; i++) {
+    var $img = $(imgs[i]);
+    if ($img.width() > 1060 || $img.width() < 500) {
+      $img.remove();
+    };
+  };
 
 ==Page Scroll Down
   $(document).scrollTop($(document).scrollTop()+$(window).height());
