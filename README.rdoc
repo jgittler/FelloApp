@@ -55,6 +55,13 @@ From the bottom use:
     names.push(links[i].getAttribute("href"));
   }
   names.join();
+  
+==VOSH Tiles
+  $.each($("a"), function(i, a) {
+    $a = $(a);
+    var src = $a.attr("href");
+    $a.replaceWith("<img src=" + src + "></img>")
+  });
 
 ==Page Scroll Down
   $(document).scrollTop($(document).scrollTop()+$(window).height());
