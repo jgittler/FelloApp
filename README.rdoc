@@ -57,19 +57,19 @@ From the bottom use:
   names.join();
   
 ==VOSH Tiles
-  # Add jQuery
+  // Add jQuery
   var jq = document.createElement('script');
   jq.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js";
   document.getElementsByTagName('head')[0].appendChild(jq);
 
-  # Make Tiles
+  // Make Tiles
   $.each($("a"), function(i, a) {
     $a = $(a);
     var src = $a.attr("href");
     $a.replaceWith("<img src=" + src + "></img>")
   });
 
-  # Remove Tiles that are Big/Small
+  // Remove Tiles that are Big/Small
   var imgs = $("img");
   for (i = 0; i < imgs.length; i++) {
     var $img = $(imgs[i]);
