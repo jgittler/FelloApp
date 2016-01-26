@@ -78,5 +78,21 @@ From the bottom use:
     };
   };
 
+==Gmail Emails
+  var bodies = [];
+  $.each($(".F.cf.zt .a4W .y2"), function() {
+    if ($(this).text().includes("Email:")) {
+      bodies.push($(this).text())
+    }
+  });
+  
+  var emails = [];
+  $.each(bodies, function() {
+    emails.push(this.split(" ")[1])
+  });
+  
+  // Make CSV String
+  emails.join(",");
+
 ==Page Scroll Down
   $(document).scrollTop($(document).scrollTop()+$(window).height());
