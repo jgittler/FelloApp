@@ -93,6 +93,32 @@ From the bottom use:
   
   // Make CSV String
   emails.join(",");
+  
+==Instagram Commenters
+  // Get tile ids for ajax
+  var ids = [];
+  $.each($("._8mlbc._t5r8b"), function() {
+    ids.push($(this).attr("href").split("/")[2]);
+  });
+
+  // Get usernames
+  var names = [];
+  var responses = [];
+  $.each(ids, function(id) {
+    responses.push(
+      $.ajax({
+        url: "https://www.instagram.com/p/" + this + "/?taken-by=felloeyewear&__a=1",
+        method: "GET"
+      })
+    );
+  });
+  $.each(responses, function() {
+    var str = $.parseJSON(this.responseText);
+    $.each(str.media.comments.nodes, function() {
+      names.push(this.user.username);
+    });
+  });
+  $.unique(names);
 
 ==Page Scroll Down
   $(document).scrollTop($(document).scrollTop()+$(window).height());
