@@ -118,7 +118,28 @@ From the bottom use:
       names.push(this.user.username);
     });
   });
-  $.unique(names);
+  
+  // Make CSV string
+  $.unique(names).join(",");
+  
+==Twitter Commenters
+  var paths = [];
+  $.each($(".original-tweet"), function() {
+    $(this).click();
+    paths.push($(this).find(".js-profile-popup-actionable").attr("href"));
+  });
+  var hrefs = paths.filter(Boolean);
+  var handles = [];
+  $.each(hrefs, function() {
+    handles.push(this.replace(/\//, "@"));
+  });
+
+  // Make CSV string
+  $.unique(handles).join(",");
+
+==Twitter Messages
+  var all = $("small.username").text().split("@").join(",@");
+  all.substring(1, all.length);
 
 ==Page Scroll Down
   $(document).scrollTop($(document).scrollTop()+$(window).height());
