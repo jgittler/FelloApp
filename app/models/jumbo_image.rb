@@ -7,6 +7,22 @@ class JumboImage
     end
   end
 
+  def self.cate_lg
+    if Rails.env.production?
+      "http://a1.res.cloudinary.com/hxeuqektg/image/upload/v1441852503/cate_lg.jpg"
+    else
+      'cate_lg.jpg'
+    end
+  end
+
+  def self.lifeguard
+    if Rails.env.production?
+      "http://a1.res.cloudinary.com/hxeuqektg/image/upload/v1454139165/fello_lifeguard.jpg"
+    else
+      'fello_lifeguard.jpg'
+    end
+  end
+
   def self.about
     if Rails.env.production?
       'http://a1.res.cloudinary.com/hxeuqektg/image/upload/v1440575863/fello_pineapple.jpg'
@@ -20,14 +36,6 @@ class JumboImage
       "http://a1.res.cloudinary.com/hxeuqektg/image/upload/v1441407751/fello_and_vosh.jpg"
     else
       'fello_and_vosh.jpg'
-    end
-  end
-
-  def self.cate_lg
-    if Rails.env.production?
-      "http://a1.res.cloudinary.com/hxeuqektg/image/upload/v1441852503/cate_lg.jpg"
-    else
-      'cate_lg.jpg'
     end
   end
 

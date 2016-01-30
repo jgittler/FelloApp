@@ -45,7 +45,7 @@ Rails.application.configure do
   config.assets.digest = true
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
-  config.action_controller.asset_host = ENV['FASTLY_CDN_URL']
+  # config.action_controller.asset_host = ENV['FASTLY_CDN_URL']
 
   # Adds additional error checking when serving assets at runtime.
   # Checks for improperly declared sprockets dependencies.
