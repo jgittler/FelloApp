@@ -140,6 +140,20 @@ From the bottom use:
 ==Twitter Messages
   var all = $("small.username").text().split("@").join(",@");
   all.substring(1, all.length);
+  
+==Unfollow Iconosquare
+  var followers = [];
+  $.each($(".detailUser"), function() {
+    followers.push($(this).attr("id").split("-")[1]);
+  });
+  var tiles = [];
+  $.each($(".detailUser"), function() {
+    if ($.inArray(String($(this).attr("id").split("-")[1]), followers) == -1) {
+      tiles.push($(this));
+    }
+  });
+  tiles = tiles.slice(<n>)
+  $.each(tiles, function() { $(this).find(".unfollow").click(); });
 
 ==Page Scroll Down
   $(document).scrollTop($(document).scrollTop()+$(window).height());
