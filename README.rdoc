@@ -51,11 +51,10 @@ From the bottom use:
 ==Facebook Commenters
   var names = [];
   var links = document.getElementsByClassName("UFICommentActorName");
-  for (i = 0; i < s.length; i++) { 
+  for (i = 0; i < links.length; i++) { 
     names.push(links[i].getAttribute("href"));
   }
-  names.join();
-  
+
 ==VOSH Tiles
   // Add jQuery
   var jq = document.createElement('script');
