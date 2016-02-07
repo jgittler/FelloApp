@@ -17,7 +17,7 @@ class JumboImage
 
   def self.lifeguard
     if Rails.env.production?
-      "http://a1.res.cloudinary.com/hxeuqektg/image/upload/v1454139165/fello_lifeguard.jpg"
+      "http://res.cloudinary.com/hxeuqektg/image/upload/v1454834221/fello_lifeguard.jpg"
     else
       'fello_lifeguard.jpg'
     end
