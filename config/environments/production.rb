@@ -64,7 +64,7 @@ Rails.application.configure do
   config.action_controller.asset_host = ENV['FASTLY_CDN_URL']
 
   config.autoload_paths += %W(
-    {Rails.root.to_s}/app/mailers
+    #{Rails.root.to_s}/app/mailers
     #{Rails.root.to_s}/app/view_objects
   )
 

@@ -9,14 +9,14 @@ class Founder
   end
 
   def sasha
-    @description = "ajdhfnsdlfqlwksdjfk;awmsfpiasjdifmarfjalngo;rgaw;jgsdfa"
+    @description = ""
   end
 
   def jonathan
-    @description = "ajdhfnsdlfqlwksdjfk;awmsfpiasjdifmarfjalngo;rgaw;jgsdfa"
+    @description = ""
   end
 
   def jason
-    @description = "ajdhfnsdlfqlwksdjfk;awmsfpiasjdifmarfjalngo;rgaw;jgsdfa"
+    @description = ""
   end
 end
