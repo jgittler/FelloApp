@@ -55,9 +55,11 @@ Rails.application.routes.draw do
   #   end
   root to: "landing#kickstarter", as: "kickstarter"
 
-  get "about",   to: "landing#about",   as: "about"
-  get "charity", to: "landing#charity", as: "charity"
-  get "share",   to: "landing#share",   as: "share"
+  get "about",    to: "landing#about",    as: "about"
+  get "charity",  to: "landing#charity",  as: "charity"
+  get "share",    to: "landing#share",    as: "share"
+  get "founders", to: "landing#founders", as: "founders"
+  get "fello_warranty", to: "landing#fello_warranty", as: "warranty"
 
   post "lead_email", to: "email#lead_email", as: "lead_email"
   post "email_from_survey", to: "email#email_from_survey", as: "email_from_survey"

@@ -1,0 +1,57 @@
+.founders {
+
+  .info {
+     margin-top: 10%;
+
+     @media(min-width: 992px) {
+       margin-top: 25px;
+     }
+
+     @media(min-width: 768px) {
+       margin-top: 15%;
+     }
+  }
+
+  a.carousel-control > .fa {
+    position: absolute;
+    top: 75%;
+
+    &.fa-chevron-left {
+      left: 25%;
+    }
+
+    &.fa-chevron-right {
+      right: 25%;
+    }
+
+    @media(min-width: 768px) {
+      position: absolute;
+      top: 50%;
+    }
+  }
+
+  h1 {
+
+    &.name {
+      font-size: 24px;
+
+      @media(min-width: 768px) {
+        font-size: 36px;
+      }
+    }
+  }
+
+  h4 {
+    text-align: justify;
+    line-height: 1.65;
+    word-wrap: break-word;
+
+    &.personality {
+      font-size: 14px;
+
+      @media(min-width: 992px) {
+        font-size: 18px;
+      }
+    }
+  }
+}

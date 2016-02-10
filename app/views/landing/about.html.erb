@@ -5,22 +5,48 @@
         A California Craft, with a vision to help the world.
       </h1>
     </div>
+    </div>
   </div>
 </div>
 
-<div class="row stripe">
-  <h3 class="main-text text-center">
-    Fello strives to become the new standard
-    in an industry led by greed.
-  </h3>
-</div>
-
-<div class="row text-center">
+<div class="row text-center soft-blue-bg">
+  <br />
   <h1 class="titles">
-    Our Fellosophy
+    <span class="blue">Our Fellosophy</span>
+    <br />
+    <small>If anything happens... We have your back.</small>
   </h1>
 </div>
 
-<%= image_helper 'info_graphic.jpg', class: 'full' %>
+<%= image_helper 'fello_warranty.png', class: 'hidden-xs full soft-blue-bg' %>
+
+<%= image_helper 'fello_warranty_vert.png', class: 'visible-xs full soft-blue-bg' %>
+<!-- <div class="progress"> -->
+<!--   <div class="progress&#45;bar" role="progressbar" aria&#45;valuenow="1" aria&#45;valuemin="0" aria&#45;valuemax="100" style="width:1 k %"> -->
+<!--     <span class="sr&#45;only">70% Complete</span> -->
+<!--   </div> -->
+<!-- </div> -->
+<!-- <div class="row stripe"> -->
+<!--   <h3 class="main&#45;text text&#45;center"> -->
+<!--     Fello strives to become the new standard -->
+<!--     in an industry led by greed. -->
+<!--   </h3> -->
+<!-- </div> -->
 
 <%= render 'story' %>
+
+<script>
+// var i = 1;
+// var interval = setInterval(increment, 100);
+// function increment() {
+//   i = i % 360 + 1;
+//   if (i > 100) {
+//     i = 1;
+//     $(".progress-bar").prop("aria-valuenow","0");
+//     clearInterval(interval);
+//   }
+//   $(".progress-bar").prop("aria-valuenow", "1");
+//   $(".progress-bar").css("width", i + "%");
+//   var interval = setInterval(increment, 100);
+// }
+</script>

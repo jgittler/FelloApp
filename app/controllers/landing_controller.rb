@@ -21,4 +21,13 @@ class LandingController < ApplicationController
 
   def share
   end
+
+  def founders
+    @sasha = Founder.new(:sasha)
+    @jonathan = Founder.new(:jonathan)
+    @jason = Founder.new(:jason)
+  end
+
+  def fello_warranty
+  end
 end
