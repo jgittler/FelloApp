@@ -1,5 +1,15 @@
 .founders {
 
+  .sig {
+    width: 75%;
+    margin-bottom: 25px;
+
+    @media(min-width: 768px) {
+      width: 90%;
+      margin-bottom: 0;
+    }
+  }
+
   .info {
      margin-top: 10%;
 

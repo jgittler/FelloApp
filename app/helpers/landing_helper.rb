@@ -1,10 +1,6 @@
 module LandingHelper
   def story_text
-    "Ray-Ban, Oakley, Prada, Sunglass Hut and many more have one thing in common.
-    They are all owned by an Italian Mega Corporation called Luxottica.
-    You aren’t paying that high price for glasses because of the brand or quality.
-    You are getting robbed because they have a monopoly over the entire sunglasses market, 80% to be exact.
-    Fello Eyewear is here to change the game. We are driven by customer satisfaction rather than profit margins.
+    "Fello Eyewear is here to change the game. We are driven by customer satisfaction rather than profit margins.
     The quality of our sunglasses rivals designer brands, but at an affordable price.
     Our sunglasses come with a Promise that can’t be matched, and we are acting on our Vision to help the world."
   end
