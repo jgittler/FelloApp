@@ -7,17 +7,17 @@ class JumboImage
     end
   end
 
-  def self.cate_lg
+  def self.founders
     if Rails.env.production?
-      "http://a1.res.cloudinary.com/hxeuqektg/image/upload/v1441852503/cate_lg.jpg"
+      "http://a1.res.cloudinary.com/hxeuqektg/image/upload/v1455006072/californian_fello.jpg"
     else
-      'cate_lg.jpg'
+      "californian_fello.jpg"
     end
   end
 
   def self.lifeguard
     if Rails.env.production?
-      "http://res.cloudinary.com/hxeuqektg/image/upload/v1454834221/fello_lifeguard.jpg"
+      "http://a1.res.cloudinary.com/hxeuqektg/image/upload/v1454834221/fello_lifeguard.jpg"
     else
       'fello_lifeguard.jpg'
     end

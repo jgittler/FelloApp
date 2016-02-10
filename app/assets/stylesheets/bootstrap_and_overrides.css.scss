@@ -73,14 +73,28 @@ body {
   }
 }
 
+
 .carousel-control {
 
-  &.right {
-    background-image: none;
+  .founders & {
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.0001) 0, rgba($blue,0.2) 100%);
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0.0001) 0, rgba($blue,0.2) 100%);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.0001) 0, rgba($blue,0.2) 100%);
+
+    &.left {
+      background-image: none;
+    }
   }
 
-  &.left {
-    background-image: none;
+  .bb-container & {
+
+    &.right {
+      background-image: none;
+    }
+
+    &.left {
+      background-image: none;
+    }
   }
 }
 

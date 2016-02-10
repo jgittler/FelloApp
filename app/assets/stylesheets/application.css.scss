@@ -26,6 +26,10 @@ $gray: #999999;
   font-weight: 800;
 }
 
+.soft-blue-bg {
+  background-color: rgba($blue, 0.1);
+}
+
 .thunderclap {
   padding: 0;
   margin-top: 25px;
@@ -237,6 +241,10 @@ $gray: #999999;
 .titles {
   font-variant: small-caps;
   font-family: 'Josefin Sans', sans-serif;
+
+  small {
+    font-variant: normal;
+  }
 }
 
 .fello-text {
