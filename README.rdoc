@@ -141,10 +141,16 @@ From the bottom use:
   all.substring(1, all.length);
   
 ==Unfollow Iconosquare
+  var intv = setInterval(function() {
+    $(".more").click();
+  }, 2000);
+  clearInterval(intv);
+
   var followers = [];
   $.each($(".detailUser"), function() {
     followers.push($(this).attr("id").split("-")[1]);
   });
+
   var tiles = [];
   $.each($(".detailUser"), function() {
     if ($.inArray(String($(this).attr("id").split("-")[1]), followers) == -1) {
