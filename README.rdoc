@@ -47,6 +47,9 @@ Please feel free to use a different markup language if you do not plan to run
 From the bottom use:
   var favs = $('.HeartAnimationContainer').slice(Math.max($('.HeartAnimationContainer').length - <n>, 1));
   favs.each(function() { $(this).trigger('click') });
+  var intv = setInterval(function() {
+    $(favs[Math.floor((Math.random() * <n>) + 1)]).click();
+  }, 1000);
 
 ==Facebook Commenters
   var names = [];
@@ -143,7 +146,7 @@ From the bottom use:
 ==Unfollow Iconosquare
   var intv = setInterval(function() {
     $(".more").click();
-  }, 2000);
+  }, 500);
   clearInterval(intv);
 
   var followers = [];
@@ -161,4 +164,6 @@ From the bottom use:
   $.each(tiles, function() { $(this).find(".unfollow").click(); });
 
 ==Page Scroll Down
-  $(document).scrollTop($(document).scrollTop()+$(window).height());
+  var intv = setInterval(function() {
+    $(document).scrollTop($(document).scrollTop()+$(window).height());
+  }, 500);
