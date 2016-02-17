@@ -40,4 +40,12 @@
     <loc>http://www.felloeyewear.com/celeb_question</loc>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>http://www.felloeyewear.com/founders</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.felloeyewear.com/fello_warranty</loc>
+    <changefreq>weekly</changefreq>
+  </url>
 </urlset>

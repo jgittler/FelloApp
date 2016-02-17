@@ -34,7 +34,7 @@ class Product
   end
 
   def heron
-    @original = "Green Lenses"
+    @original = "Dark Lenses"
     @alternate = "Blue Lenses"
     @original_front = "heron_green_front.png"
     @original_angle = "heron_green_angle.png"
