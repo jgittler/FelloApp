@@ -47,6 +47,7 @@ Please feel free to use a different markup language if you do not plan to run
 From the bottom use:
   var favs = $('.HeartAnimationContainer').slice(Math.max($('.HeartAnimationContainer').length - <n>, 1));
   favs.each(function() { $(this).trigger('click') });
+  OR
   var intv = setInterval(function() {
     $(favs[Math.floor((Math.random() * <n>) + 1)]).click();
   }, 1000);
@@ -162,6 +163,19 @@ From the bottom use:
   });
   tiles = tiles.slice(<n>)
   $.each(tiles, function() { $(this).find(".unfollow").click(); });
+  OR
+  var intv = setInterval(function() {
+    $(tiles[Math.floor((Math.random() * tiles.length) + 1)]).find(".unfollow").click();
+  }, 1000);
+  
+  // Hide users who don't follow us back
+  var followUs = []
+  $.each($(".detailUser"), function() {
+    if ($.inArray(String($(this).attr("id").split("-")[1]), followers) != -1) {
+      followUs.push($(this));
+    }
+  });
+  $.each(followUs, function() { $(this).hide(); });
 
 ==Page Scroll Down
   var intv = setInterval(function() {
