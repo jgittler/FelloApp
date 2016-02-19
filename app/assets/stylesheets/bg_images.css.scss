@@ -1,5 +1,8 @@
 .jumbo-survey {
-  background-image: url("survey_bg.jpg");
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(top, #1e5799 0%, #64a3de 0%, #1fa7d6 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #1e5799 0%,#64a3de 0%,#1fa7d6 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1e5799 0%,#64a3de 0%,#1fa7d6 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .jumbo-vosh {
