@@ -7,7 +7,7 @@ module LandingHelper
 
   def promise_text
     "When we say we have your back, we mean it. It sucks spending money on an expensive pair of sunglasses
-    that will inevitably break or disappear in a few months. If you back us on Kickstarter you will never have to worry again.
+    that will inevitably break or disappear in a few months. If you contribute on Indiegogo you will never have to worry again.
     If your sunglasses are lost, broken, or stolen we'll replace them absolutely free."
   end
 

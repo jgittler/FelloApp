@@ -33,19 +33,19 @@
 
     <div class="col-md-4 col-md-offset-1 col-xs-8 col-xs-offset-2 v-center buy">
       <div class="row row-eq-height-xs">
-        <%= image_helper 'kickstarter-logo-square.jpg', class: 'v-center col-xs-4' %>
+        <%= image_helper 'indiegogo.png', class: 'v-center col-xs-4' %>
 
         <div class="col-xs-8 v-center">
           <h4 class="header-eq-marg">
-            The Fello <%= product.name.capitalize %> line will be available on Kickstarter in March
+            The Fello <%= product.name.capitalize %> line will be available on Indiegogo in March
             for the discounted price of <%= product.price %>.
           </h4>
         </div>
       </div>
 
-      <%= link_to "http://www.kickstarter.com", target: :blank do %>
+      <%= link_to "https://www.indiegogo.com", target: :blank do %>
         <div class="col-xs-12 text-center btn btn-primary sharp">
-          <h4>Checkout Kickstarter</h4>
+          <h4>Checkout Indiegogo</h4>
         </div>
       <% end %>
     </div>

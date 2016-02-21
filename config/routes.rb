@@ -53,7 +53,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  root to: "landing#kickstarter", as: "kickstarter"
+  root to: "landing#indiegogo", as: "indiegogo"
 
   get "about",    to: "landing#about",    as: "about"
   get "charity",  to: "landing#charity",  as: "charity"

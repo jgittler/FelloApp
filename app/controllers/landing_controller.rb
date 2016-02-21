@@ -1,7 +1,7 @@
 class LandingController < ApplicationController
   ACTIVE_NAV_CLASS = "active"
 
-  def kickstarter
+  def indiegogo
     @about_active = ""
     @charity_active = ""
     @konvoy = Product.new(:konvoy)
