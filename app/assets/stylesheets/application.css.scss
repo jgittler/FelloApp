@@ -18,6 +18,7 @@
 
 $blue: #1FA7D6;
 $gray: #999999;
+$pink: #EB1478;
 
 @mixin blue-submit {
   background-color: $blue;
@@ -42,20 +43,20 @@ $gray: #999999;
     border: inherit;
 
     &:hover {
-      background-color: darken($blue, 10%);
+      background-color: darken($pink, 10%);
     }
     &:focus {
-      background-color: darken($blue, 10%);
+      background-color: darken($pink, 10%);
     }
     &:active {
-      background-color: darken($blue, 15%);
+      background-color: darken($pink, 15%);
     }
     &:visited {
-      background-color: $blue;
+      background-color: $pink;
       color: white;
     }
     &:link {
-      background-color: $blue;
+      background-color: $pink;
       color: white;
     }
   }

@@ -1,6 +1,8 @@
 $gray: #999999;
+$blue: #1FA7D6;
 
 .share {
+  background-color: rgba($blue, 0.1);
 
   h2.titles {
     margin-bottom: 0px;
@@ -29,9 +31,12 @@ $gray: #999999;
 
   .card {
     text-align: center;
+    background-color: inherit;
   }
 
   &.stripe {
+    color: $gray;
+    background-color: rgba($blue, 0.1);
 
     h3 {
      margin: 15px 0px;
@@ -92,10 +97,14 @@ $gray: #999999;
 }
 
 .jumbo-share {
-  padding-top: 130px !important;
-  padding-bottom: 130px !important;
+  padding-top: 230px;
+  padding-bottom: 160px;
+
+  small {
+    color: white;
+  }
 
   .text-center {
-    margin-top: -75px;
+    margin-top: -180px;
   }
 }
