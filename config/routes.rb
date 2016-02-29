@@ -57,7 +57,7 @@ Rails.application.routes.draw do
 
   get "about",    to: "landing#about",    as: "about"
   get "charity",  to: "landing#charity",  as: "charity"
-  get "share",    to: "landing#share",    as: "share"
+  get "support",  to: "landing#support",  as: "support"
   get "founders", to: "landing#founders", as: "founders"
   get "fello_warranty", to: "landing#fello_warranty", as: "warranty"
 

@@ -19,7 +19,7 @@ class LandingController < ApplicationController
     @charity_active = ACTIVE_NAV_CLASS
   end
 
-  def share
+  def support
   end
 
   def founders
