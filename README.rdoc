@@ -176,6 +176,17 @@ From the bottom use:
     }
   });
   $.each(followUs, function() { $(this).hide(); });
+  
+==Facebook Invite All Friends to Like Page
+  var inviteButtons = document.getElementsByClassName("uiButton");
+  var event = new MouseEvent('click', {
+    "view": window,
+    "bubbles": true,
+    "cancelable": true
+  });
+  for (i = 0; i < inviteButtons.length; i++) {
+    inviteButtons[i].dispatchEvent(event);
+  }
 
 ==Page Scroll Down
   var intv = setInterval(function() {
