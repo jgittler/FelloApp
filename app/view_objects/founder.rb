@@ -1,5 +1,5 @@
 class Founder
-  attr_reader :image, :name, :description, :signature 
+  attr_reader :image, :name, :description, :signature, :email
 
   def initialize(name)
     send(name)
@@ -10,13 +10,16 @@ class Founder
 
   def sasha
     @description = ""
+    @email = "sasha@felloeyewear.com"
   end
 
   def jonathan
     @description = ""
+    @email = "jonathan@felloeyewear.com"
   end
 
   def jason
     @description = ""
+    @email = "jason@felloeyewear.com"
   end
 end
