@@ -37,6 +37,8 @@ gem 'geocoder'
 gem 'twitter-bootstrap-rails', git: 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem "compass-rails", github: "Compass/compass-rails", branch: "master"
 
+gem "browser"
+
 group :production do
   gem 'rails_12factor'
 end
