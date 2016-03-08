@@ -1,17 +1,17 @@
-<div id=<%= pair %> class="carousel slide same-size" data-ride="carousel">
+<div id=<%= pair %> class="carousel slide same-size bunch-slides" data-ride="carousel">
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner same-size" role="listbox">
-    <div class="item active jumbo-pic bunch-pic  same-size <%= "top-#{pair}" %>">
+    <div class="item active jumbo-pic bunch-pic same-size <%= "top-#{pair}" %>">
     </div>
 
-    <!-- <div class="item"> -->
-    <!--   <%#= two %> -->
-    <!-- </div> -->
-    <!--  -->
-    <!-- <div class="item"> -->
-    <!--   <%#= three %> -->
-    <!-- </div> -->
+    <% unless pair == "mm" || pair == "mm-xs" %>
+      <div class="item jumbo-pic bunch-pic same-size" data-src="<%= "middle-#{pair}" %>">
+      </div>
+
+      <div class="item jumbo-pic bunch-pic same-size" data-src="<%= "bottom-#{pair}" %>">
+      </div>
+    <% end %>
   </div>
 
   <!-- Controls -->

@@ -12,3 +12,13 @@ $(document).ready(function() {
     prev.removeClass("active");
   });
 }); 
+
+
+$(document).ready(function() {
+  setTimeout(function() {
+    var slides = $(".bb-container .row .bb-square .carousel-inner .item:not(:first)");
+    $.each(slides, function() {
+      $(this).addClass($(this).data("src"));
+    });
+  }, 1000);
+});

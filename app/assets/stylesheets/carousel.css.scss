@@ -18,8 +18,12 @@
     padding: 3px;
     float: none;
     display: inline-block;
-    height: 200px;
+    height: 400px;
     width: 100%;
+
+    @media(min-width: 768px) {
+      height: 200px;
+    }
 
     @media(min-width: 768px) {
       height: 200px;

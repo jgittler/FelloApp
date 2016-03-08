@@ -1,4 +1,4 @@
-<div class="jumbotron bb hidden-xs">
+<div class="jumbotron bb">
   <div class="container bb-container">
     <div class="row">
       <div class='col-sm-3 bb-square'>
@@ -19,8 +19,11 @@
         <%= render partial: 'carousel', locals: { pair: "ml" } %>
       </div>
 
-      <div class='col-sm-3 bb-square'>
+      <div class='col-sm-3 bb-square center-logo hidden-xs'>
         <%= render partial: 'carousel', locals: { pair: "mm" } %>
+      </div>
+      <div class='col-sm-3 bb-square center-logo visible-xs'>
+        <%= render partial: 'carousel', locals: { pair: "mm-xs" } %>
       </div>
 
       <div class='col-sm-3 bb-square'>
@@ -44,40 +47,40 @@
   </div>
 </div>
 
-<div class="jumbotron bb visible-xs">
-  <div class="container bb-container">
-    <div class="row">
-      <div class='col-sm-3 bb-square'>
-        <%= render partial: 'carousel', locals: { pair: "tl-xs" } %>
-      </div>
-
-      <div class='col-sm-3 bb-square'>
-        <%= render partial: 'carousel', locals: { pair: "tr-xs" } %>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class='col-sm-3 bb-square'>
-        <%= render partial: 'carousel', locals: { pair: "ml-xs" } %>
-      </div>
-
-      <div class='col-sm-3 bb-square'>
-        <%= render partial: 'carousel', locals: { pair: "mm-xs" } %>
-      </div>
-
-      <div class='col-sm-3 bb-square'>
-        <%= render partial: 'carousel', locals: { pair: "mr-xs" } %>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class='col-sm-3 bb-square'>
-        <%= render partial: 'carousel', locals: { pair: "bl-xs" } %>
-      </div>
-
-      <div class='col-sm-3 bb-square'>
-        <%= render partial: 'carousel', locals: { pair: "bm-xs" } %>
-      </div>
-    </div>
-  </div>
+<!-- <div class="jumbotron bb visible&#45;xs"> -->
+<!--   <div class="container bb&#45;container"> -->
+<!--     <div class="row"> -->
+<!--       <div class='col&#45;sm&#45;3 bb&#45;square'> -->
+<!--         <%#= render partial: 'carousel', locals: { pair: "tl&#45;xs" } %> -->
+<!--       </div> -->
+<!--  -->
+<!--       <div class='col&#45;sm&#45;3 bb&#45;square'> -->
+<!--         <%#= render partial: 'carousel', locals: { pair: "tr&#45;xs" } %> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--  -->
+<!--     <div class="row"> -->
+<!--       <div class='col&#45;sm&#45;3 bb&#45;square'> -->
+<!--         <%#= render partial: 'carousel', locals: { pair: "ml&#45;xs" } %> -->
+<!--       </div> -->
+<!--  -->
+      <!-- <div class='col&#45;sm&#45;3 bb&#45;square'> -->
+      <!--   <%#= render partial: 'carousel', locals: { pair: "mm&#45;xs" } %> -->
+      <!-- </div> -->
+<!--  -->
+<!--       <div class='col&#45;sm&#45;3 bb&#45;square'> -->
+<!--         <%#= render partial: 'carousel', locals: { pair: "mr&#45;xs" } %> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--  -->
+<!--     <div class="row"> -->
+<!--       <div class='col&#45;sm&#45;3 bb&#45;square'> -->
+<!--         <%#= render partial: 'carousel', locals: { pair: "bl&#45;xs" } %> -->
+<!--       </div> -->
+<!--  -->
+<!--       <div class='col&#45;sm&#45;3 bb&#45;square'> -->
+<!--         <%#= render partial: 'carousel', locals: { pair: "bm&#45;xs" } %> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--   </div> -->
 </div>

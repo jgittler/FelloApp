@@ -18,9 +18,17 @@
 
 $(document).ready(function() {
 
-  $('.carousel').carousel({
+  $('.carousel.bunch-slides').carousel({
+    interval: 5000
+  })
+
+  $('.center-logo .carousel.bunch-slides').carousel({
     interval: false
   }) 
+
+  $('#founders-carousel-lg').carousel({
+    interval: false
+  })
 
 });
 

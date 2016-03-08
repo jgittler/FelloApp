@@ -11,9 +11,42 @@
 
 .bunch-pic {
   background-position: center;
+
+  @media(max-width: 768px) {
+    background-position-y: 25%;
+  }
 }
 
 .same-size {
   height: inherit;
   width: 100%;
+}
+
+.carousel {
+  .carousel-inner {
+    .item {
+      opacity: 0;
+      transition-property: opacity;
+    }
+
+    .active {
+      opacity: 1;
+    }
+
+    .active.left,
+    .active.right {
+      left: 0;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+  }
+
+  .carousel-control {
+    z-index: 2;
+  }
 }

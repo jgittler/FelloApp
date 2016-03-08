@@ -30,66 +30,169 @@
   background-image: url("fello_pineapple.jpg");
 }
 
+// BUNCH IMAGES
+
+// TOP LEFT
 .top-tl {
-  background-image: url("matt.jpg");
+  background-image: url("bunch/brett/brett.jpg");
 }
 
+.middle-tl {
+  background-image: url("bunch/brett/brett-2.jpg");
+}
+
+.bottom-tl {
+  background-image: url("bunch/brett/brett-3.jpg");
+}
+
+// TOP MIDDLE
 .top-tm {
-  background-image: url("dani.jpg");
+  background-image: url("bunch/mixed_3/matt-3.jpg");
 }
 
+.middle-tm {
+  background-image: url("bunch/mixed_3/dani.jpg");
+}
+
+.bottom-tm {
+  background-image: url("bunch/mixed_3/kassan.jpg");
+}
+
+// TOP RIGHT
 .top-tr {
-  background-image: url("kayrah.jpg");
+  background-image: url("bunch/ak/ak.jpg");
 }
 
+.middle-tr {
+  background-image: url("bunch/ak/ak-2.jpg");
+}
+
+.bottom-tr {
+  background-image: url("bunch/ak/ak-3.jpg");
+}
+
+// MIDDLE LEFT
 .top-ml {
-  background-image: url("ridge_down.jpg");
+  background-image: url("bunch/mixed_1/nat.jpg");
 }
 
+.middle-ml {
+  background-image: url("bunch/mixed_1/jerome.jpg");
+}
+
+.bottom-ml {
+  background-image: url("bunch/mixed_1/kayrah.jpg");
+}
+
+// MIDDLE
 .top-mm {
   background-image: url("fello_center.png");
 }
 
+// MIDDLE RIGHT
 .top-mr {
-  background-image: url("cate.jpg");
+  background-image: url("bunch/sarah/sarah.jpg");
 }
 
+.middle-mr {
+  background-image: url("bunch/sarah/sarah-2.jpg");
+}
+
+.bottom-mr {
+  background-image: url("bunch/sarah/sarah-3.jpg");
+}
+
+// BOTTOM LEFT
 .top-bl {
-  background-image: url("michelle.jpg");
+  background-image: url("bunch/max/max.jpg");
 }
 
+.middle-bl {
+  background-image: url("bunch/max/max-2.jpg");
+}
+
+.bottom-bl {
+  background-image: url("bunch/max/max-3.jpg");
+}
+
+// BOTTOM MIDDLE
 .top-bm {
-  background-image: url("kassan.jpg");
+  background-image: url("bunch/mixed_2/cate.jpg");
 }
 
+.middle-bm {
+  background-image: url("bunch/mixed_2/ridge_down.jpg");
+}
+
+.bottom-bm {
+  background-image: url("bunch/mixed_2/michelle.jpg");
+}
+
+// BOTTOM RIGHT
 .top-br {
-  background-image: url("jerome.jpg");
+  background-image: url("bunch/dinz/dinz.jpg");
 }
 
-.top-tl-xs {
-  background-image: url("michelle-xs.jpg");
+.middle-br {
+  background-image: url("bunch/dinz/dinz-2.jpg");
 }
 
-.top-tr-xs {
-  background-image: url("kayrah-xs.jpg");
+.bottom-br {
+  background-image: url("bunch/dinz/dinz-3.jpg");
 }
 
-.top-ml-xs {
-  background-image: url("ridge_down-xs.jpg");
-}
+// .top-tl-xs {
+//   background-image: url("bunch/michelle-xs.jpg");
+// }
 
+// .top-tr-xs {
+//   background-image: url("bunch/ak-xs.jpg");
+// }
+//
+// .top-ml-xs {
+//   background-image: url("bunch/nat-xs.jpg");
+// }
+//
+// .top-mm-xs {
+//   background-image: url("fello_center-xs.png");
+// }
+//
+// .top-mr-xs {
+//   background-image: url("bunch/dani-xs.jpg");
+// }
+//
+// .top-bl-xs {
+//   background-image: url("bunch/cate-xs");
+// }
+//
+// .top-bm-xs {
+//   background-image: url("bunch/kassan-xs.jpg");
+// }
+
+// .middle-tl-xs {
+//   background-image: url("bunch/michelle-xs.jpg");
+// }
+//
+// .middle-tr-xs {
+//   background-image: url("bunch/kayrah-xs.jpg");
+// }
+//
+// .middle-ml-xs {
+//   background-image: url("bunch/ridge_down-xs.jpg");
+// }
+//
 .top-mm-xs {
   background-image: url("fello_center-xs.png");
 }
-
-.top-mr-xs {
-  background-image: url("dani-xs.jpg");
-}
-
-.top-bl-xs {
-  background-image: url("cate-xs");
-}
-
-.top-bm-xs {
-  background-image: url("kassan-xs.jpg");
-}
+//
+// .middle-mr-xs {
+//   background-image: url("bunch/dani-xs.jpg");
+// }
+//
+// .middle-bl-xs {
+//   background-image: url("bunch/cate-xs");
+// }
+//
+// .middle-bm-xs {
+//   background-image: url("bunch/kassan-xs.jpg");
+// }
