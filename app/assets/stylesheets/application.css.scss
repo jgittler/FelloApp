@@ -40,7 +40,12 @@ $pink: #EB1478;
     color: inherit;
     background-color: inherit;
     width: 100%;
+    font-size: small;
     border: inherit;
+
+    @media(min-width: 768px) {
+      font-size: 24px;
+    }
 
     &:hover {
       background-color: darken($pink, 10%);
