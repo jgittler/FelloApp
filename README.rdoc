@@ -187,6 +187,14 @@ From the bottom use:
   for (i = 0; i < inviteButtons.length; i++) {
     inviteButtons[i].dispatchEvent(event);
   }
+  
+==Delete Twitter Replies
+  var reps = $(".twitter-atreply");
+  $.each(reps, function() {
+    $(this).parent().parent().parent().find(".Icon.Icon--dots").click();
+    $(this).parent().parent().parent().find(".js-actionDelete").click();
+    $(".delete-action").click();
+  });
 
 ==Page Scroll Down
   var intv = setInterval(function() {
