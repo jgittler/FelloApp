@@ -1,14 +1,52 @@
 $gray: #999999;
 $blue: #1FA7D6;
+$fb: #415E9B;
+$pink: #EB1478;
 
 .share {
   background-color: rgba($blue, 0.1);
 
+  .count-widget {
+    border: none;
+    cursor: default;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .facebook {
+    background-color: $fb;
+
+    .badge {
+      color: $fb;
+    }
+  }
+
+  .indiegogo {
+    background-color: $pink;
+
+    .badge {
+      color: $pink;
+    }
+  }
+
   .bar {
 
-    h4 {
+    h2 {
       text-align: center;
-      margin-top: 25%;
+      margin-top: 0;
+
+      @media(min-width: 768px) {
+        margin-top: 15%;
+      }
+    }
+  }
+
+  .progress {
+    height: 40px;
+
+    .progress-bar {
+      line-height: 40px;
+      font-size: 20px;
     }
   }
 
