@@ -1,0 +1,37 @@
+<div class="clock-wrap main-text text-center">
+  <h1 class="title gray">Buy your glasses before its too late!</h1>
+  <!-- <div class="container"> -->
+    <div class="col-xs-10 col-xs-offset-1 your-clock"></div>
+  <!-- </div> -->
+  <div class="row">
+    <div class="col-md-2 col-md-offset-1 col-xs-12 clear-left">
+      <%= button_tag do %>
+        <%= link_to "Read Story",
+          "https://www.indiegogo.com/projects/fello-eyewear-the-glasses-that-keep-on-giving/x/13407604#/story",
+          class: "btn btn-lg btn-primary sharp"
+        %>
+      <% end %>
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <%= button_tag do %>
+        <%= link_to "https://www.indiegogo.com/projects/fello-eyewear-the-glasses-that-keep-on-giving/x/13407604#/",
+          { class: "btn btn-lg btn-primary sharp buy" } do
+        %>
+          Buy Now
+        <% end %>
+      <% end %>
+    </div>
+    <div class="col-md-2 col-xs-12">
+      <%= button_tag do %>
+        <%= link_to "View Gallery",
+          "https://www.indiegogo.com/projects/fello-eyewear-the-glasses-that-keep-on-giving/x/13407604#/gallery",
+          class: "btn btn-lg btn-primary sharp"
+        %>
+      <% end %>
+    </div>
+  </div>
+  <br />
+  <h4 class="gray">
+    If you want to see pictures of the sunglasses and how they fit on different faces view our Gallery.
+  </h4>
+</div>

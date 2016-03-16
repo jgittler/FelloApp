@@ -13,8 +13,8 @@
  *= require_tree .
  *= require_self
  */
-
 @import "../../../vendor/assets/bootstrap-slider/css/bootstrap-slider";
+// @import "../../../node_modules/flipclock/compiled/flipclock.css";
 
 $blue: #1FA7D6;
 $gray: #999999;
@@ -29,6 +29,10 @@ $pink: #EB1478;
 
 .soft-blue-bg {
   background-color: rgba($blue, 0.1);
+}
+
+.clear-left {
+  clear: left;
 }
 
 .thunderclap {
