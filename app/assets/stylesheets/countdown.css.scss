@@ -10,7 +10,7 @@ $pink: #EB1478;
   }
 
   .buy {
-    background-color: $pink;
+    background-color: $pink !important;
     border: none;
   }
 
@@ -81,19 +81,16 @@ $pink: #EB1478;
     }
   }
 
-  button {
+  .btn {
     padding: 0;
     margin-top: 30px;
     border: none;
     width: 100%;
+    background-color: $blue;
+    height: 50px;
 
     @media(min-wdith: 768px) {
       margin-top: 50px;
-    }
-
-    a {
-      width: 100%;
-      background-color: $blue;
     }
   }
 }
