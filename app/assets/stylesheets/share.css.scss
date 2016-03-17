@@ -6,6 +6,12 @@ $pink: #EB1478;
 .share {
   background-color: rgba($blue, 0.1);
 
+  .row {
+    &:last-of-type {
+      padding-bottom: 100px;
+    }
+  }
+
   .count-widget {
     border: none;
     cursor: default;
@@ -43,10 +49,17 @@ $pink: #EB1478;
 
   .progress {
     height: 40px;
+    overflow: visible;
+
 
     .progress-bar {
       line-height: 40px;
       font-size: 20px;
+
+      &.inner-bar {
+        z-index: 3;
+        border-right: 1px solid white;
+      }
     }
   }
 
