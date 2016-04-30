@@ -2,28 +2,28 @@
 <html>
 <head>
   <%= favicon_link_tag 'favicon-1.png' %>
-  <title>Fello Eyewear Indiegogo<%= dynamic_title %></title>
+  <title>Fello Eyewear Kickstarter<%= dynamic_title %></title>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,100,700italic,700,600italic,400italic,300,300italic,100italic' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
   <link rel="dns-prefetch" href="http://www.felloeyewear.com">
   <link href="http://www.felloeyewear.com/" rel="prefetch" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta content="Fello Eyewear. High Quality. Polarized. Earn a second pair for free." name="description">
+  <meta content="Fello Eyewear. High Quality. Polarized. Affordable." name="description">
 
   <!-- Facebook Tags -->
-  <meta property="og:url" content="bit.ly/freefellos"/>
+  <meta property="og:url" content="https://www.kickstarter.com/projects/1474929497/fello-eyewear-high-quality-polarized-affordable"/>
   <meta property="og:type" content="product"/>
-  <meta property="og:title" content="Fello Eyewear Indiegogo: The Glasses that keep on Giving."/>
+  <meta property="og:title" content="Fello Eyewear. High Quality. Polarized. Affordable."/>
   <meta property="og:image" content="http://res.cloudinary.com/hxeuqektg/image/upload/v1456719546/Fello_Eyewear_Sharer.jpg"/>
-  <meta property="og:description" content="Never worry about losing your sunglasses again."/>
+  <meta property="og:description" content="Premium doesn't have to be expensive."/>
   <meta property="fb:app_id" content="966242223397117"/>
 
   <!-- Twitter Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@felloeyewear">
-  <meta name="twitter:title" content="Fe||o Eyewear: The Glasses that keep on Giving.">
-  <meta name="twitter:description" content="Never worry about losing your sunglasses again.">
+  <meta name="twitter:title" content="Fello Eyewear. High Quality. Polarized. Affordable.">
+  <meta name="twitter:description" content="Premium doesn't have to be expensive">
   <meta name="twitter:image" content="http://res.cloudinary.com/hxeuqektg/image/upload/v1456719546/Fello_Eyewear_Sharer.jpg">
 
 <!-- Facebook Pixel Code | Fello Busness Account -->
@@ -52,15 +52,15 @@
 <h1>Sorry, but we don't support Internet Explorer. Try downloading Google Chrome.</h1>
 <![endif]-->
 
-<% unless current_page?(controller: 'landing', action: 'support') %>
+<%# <% unless current_page?(controller: 'landing', action: 'support') %>
   <%= render 'layouts/nav_bar' %>
-<% end %>
+<%# <% end %>
 
 <%= yield %>
 
-<% unless current_page?(controller: 'landing', action: 'support') %>
+<%# <% unless current_page?(controller: 'landing', action: 'support') %>
   <%= render 'layouts/footer' %>
-<% end %>
+<%# <% end %>
 
 <!-- Google Analytics Code -->
 <%# <% if Rails.env.production? %>

@@ -53,23 +53,23 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  root to: "landing#indiegogo", as: "indiegogo"
+  root to: "landing#kickstarter", as: "kickstarter"
 
-  get "about",    to: "landing#about",    as: "about"
+  # get "about",    to: "landing#about",    as: "about"
   get "charity",  to: "landing#charity",  as: "charity"
-  get "support",  to: "landing#support",  as: "support"
+  # get "support",  to: "landing#support",  as: "support"
   get "founders", to: "landing#founders", as: "founders"
-  get "fello_warranty", to: "landing#fello_warranty", as: "warranty"
+  # get "fello_warranty", to: "landing#fello_warranty", as: "warranty"
 
   post "lead_email", to: "email#lead_email", as: "lead_email"
   post "email_from_survey", to: "email#email_from_survey", as: "email_from_survey"
 
-  get "charity_question",  to: "survey#charity_question",  as: "charity_question"
-  get "warranty_question", to: "survey#warranty_question", as: "warranty_question"
-  get "made_question",     to: "survey#made_question",     as: "made_question"
-  get "quality_question",  to: "survey#quality_question",  as: "quality_question"
-  get "celeb_question",    to: "survey#celeb_question",    as: "celeb_question"
-  post "complete_survey",  to: "survey#complete_survey",   as: "complete_survey"
+  # get "charity_question",  to: "survey#charity_question",  as: "charity_question"
+  # get "warranty_question", to: "survey#warranty_question", as: "warranty_question"
+  # get "made_question",     to: "survey#made_question",     as: "made_question"
+  # get "quality_question",  to: "survey#quality_question",  as: "quality_question"
+  # get "celeb_question",    to: "survey#celeb_question",    as: "celeb_question"
+  # post "complete_survey",  to: "survey#complete_survey",   as: "complete_survey"
 
   get "sitemap.xml", to: "sitemap#show", format: "xml", as: "sitemap"
 end

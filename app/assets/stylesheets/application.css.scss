@@ -19,6 +19,7 @@
 $gray: #999999;
 $blue: #1FA7D6;
 $pink: #EB1478;
+$green: #2BDE73;
 
 @mixin blue-submit {
   background-color: $blue;
@@ -52,20 +53,20 @@ $pink: #EB1478;
     }
 
     &:hover {
-      background-color: darken($pink, 10%);
+      background-color: darken($green, 10%);
     }
     &:focus {
-      background-color: darken($pink, 10%);
+      background-color: darken($green, 10%);
     }
     &:active {
-      background-color: darken($pink, 15%);
+      background-color: darken($green, 15%);
     }
     &:visited {
-      background-color: $pink;
+      background-color: $green;
       color: white;
     }
     &:link {
-      background-color: $pink;
+      background-color: $green;
       color: white;
     }
   }
