@@ -62,7 +62,7 @@ Rails.application.routes.draw do
   # get "fello_warranty", to: "landing#fello_warranty", as: "warranty"
 
   post "lead_email", to: "email#lead_email", as: "lead_email"
-  post "email_from_survey", to: "email#email_from_survey", as: "email_from_survey"
+  # post "email_from_survey", to: "email#email_from_survey", as: "email_from_survey"
 
   # get "charity_question",  to: "survey#charity_question",  as: "charity_question"
   # get "warranty_question", to: "survey#warranty_question", as: "warranty_question"

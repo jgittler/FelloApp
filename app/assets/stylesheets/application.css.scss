@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-@import "../../../vendor/assets/bootstrap-slider/css/bootstrap-slider";
+// @import "../../../vendor/assets/bootstrap-slider/css/bootstrap-slider";
 // @import "../../../node_modules/flipclock/compiled/flipclock.css";
 
 $gray: #999999;
@@ -26,6 +26,14 @@ $green: #2BDE73;
   color: white;
   border: none;
   font-weight: 800;
+}
+
+.k-s {
+  background-color: $green;
+
+  .badge {
+    color: $green;
+  }
 }
 
 .soft-blue-bg {

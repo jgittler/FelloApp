@@ -4,7 +4,7 @@ $fb: #415E9B;
 $pink: #EB1478;
 
 .share {
-  background-color: rgba($blue, 0.1);
+  background-color: inherit;
 
   .row {
     &:last-of-type {
@@ -16,7 +16,7 @@ $pink: #EB1478;
     border: none;
     cursor: default;
     margin-top: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .facebook {
@@ -42,7 +42,7 @@ $pink: #EB1478;
       margin-top: 0;
 
       @media(min-width: 768px) {
-        margin-top: 15%;
+        margin-top: 5%;
       }
     }
   }
@@ -69,6 +69,10 @@ $pink: #EB1478;
   }
 
   &.icons {
+
+    .circle {
+      margin-top: -150px;
+    }
 
     h4 {
       color: $gray;

@@ -3,16 +3,21 @@ $pink: #EB1478;
 $green: #2BDE73;
 
 .clock-wrap {
-  padding: 50px 0;
+  padding: 20px 0;
   background-color: lighten(white, 10%);
 
+  @media(min-width: 768px) {
+    padding: 50px 0;
+  }
+
   h1 {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 
   .buy {
     background-color: $green !important;
     border: none;
+    margin-bottom: 50px;
   }
 
   .your-clock {
@@ -84,11 +89,10 @@ $green: #2BDE73;
 
   .btn {
     padding: 0;
-    margin-top: 30px;
+    margin-top: 10px;
     border: none;
-    width: 100%;
     background-color: $blue;
-    height: 50px;
+    height: 40px;
 
     @media(min-wdith: 768px) {
       margin-top: 50px;
