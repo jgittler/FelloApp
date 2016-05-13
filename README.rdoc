@@ -199,4 +199,8 @@ From the bottom use:
 ==Page Scroll Down
   var intv = setInterval(function() {
     $(document).scrollTop($(document).scrollTop()+$(window).height());
-  }, 500);
+  }, 150);
+
+  var intv = setInterval(function() {
+    window.scrollTo(0,document.body.scrollHeight);
+  }, 150);
