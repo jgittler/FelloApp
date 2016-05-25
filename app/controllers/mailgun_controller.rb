@@ -25,7 +25,6 @@ class MailgunController < ApplicationController
     digest = OpenSSL::Digest::SHA256.new
     data = [timestamp, token].join
     signature == OpenSSL::HMAC.hexdigest(digest, api_key, data)
-    false
   end
 
   def auth_webhook
