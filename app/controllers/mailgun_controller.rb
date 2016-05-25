@@ -58,7 +58,10 @@ class MailgunController < ApplicationController
       :recipient,
       "device-type",
       "client-name",
-      "client-os"
+      "client-os",
+      :ip,
+      "client-type",
+      "mailing-list"
     )
   end
 end
