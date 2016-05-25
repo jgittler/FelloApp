@@ -22,7 +22,8 @@ class MailgunController < ApplicationController
   end
 
   def mg_api_key
-    Rails.application.secrets.mailgun_api_key
+    ENV["MAILGUN_PRIVATE_API_KEY"]
+    # Rails.application.secrets.mailgun_api_key
   end
 
   def mg_token
