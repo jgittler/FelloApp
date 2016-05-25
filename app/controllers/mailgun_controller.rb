@@ -1,8 +1,17 @@
+require "openssl"
+
 class MailgunController < ApplicationController
   # before_action :auth_webhook, only: :open_webhook
 
   def open_webhook
+    puts
+    puts
     puts params
+    puts
+    puts
+    puts "IM HERE"
+    puts
+    puts
 
     no_view
   end
