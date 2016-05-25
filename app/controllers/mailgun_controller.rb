@@ -4,7 +4,13 @@ class MailgunController < ApplicationController
   before_action :auth_webhook, only: :open_webhook
 
   def open_webhook
-    render json: { params: open_event_params }, status: 200
+    open_event = OpenEvent.new(open_event_params)
+
+    if open_event.save
+      no_view
+    else
+      render json: { errors: open_event.errors.full_messages }, status: 422
+    end
   end
 
   private
@@ -22,20 +28,19 @@ class MailgunController < ApplicationController
   end
 
   def mg_api_key
-    ENV["MAILGUN_PRIVATE_API_KEY"]
-    # Rails.application.secrets.mailgun_api_key
+    Rails.application.secrets.mailgun_private_api_key
   end
 
   def mg_token
-    open_event_params.fetch("token")
+    params.fetch("token")
   end
 
   def event_time
-    open_event_params.fetch("timestamp")
+    params.fetch("timestamp")
   end
 
   def mg_signature
-    open_event_params.fetch("signature")
+    params.fetch("signature")
   end
 
   def open_event_params
@@ -44,9 +49,6 @@ class MailgunController < ApplicationController
       :country,
       :region,
       :recipient,
-      :timestamp,
-      :token,
-      :signature,
       "device-type",
       "client-name",
       "client-os"
