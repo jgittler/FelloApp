@@ -5,16 +5,16 @@ class MailgunController < ApplicationController
     ErrorMailer.server_error(e).deliver
   end
 
-  before_action :auth_webhook, only: :open_webhook
+  before_action :auth_webhook, only: :webhook
 
-  def open_webhook
-    open_event = OpenEvent.new(open_event_params)
+  def webhook
+    event = Event.new(event_params)
 
-    if open_event.save
+    if event.save
       no_view
     else
-      errors = open_event.errors.full_messages
-      ErrorMailer.invalid_record(open_event_params, errors).deliver
+      errors = event.errors.full_messages
+      ErrorMailer.invalid_record(event_params, errors).deliver
       render json: { errors: errors }, status: 422
     end
   end
@@ -50,8 +50,9 @@ class MailgunController < ApplicationController
     params.fetch("signature")
   end
 
-  def open_event_params
+  def event_params
     params.permit(
+      :event,
       :city,
       :country,
       :region,
