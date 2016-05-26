@@ -71,7 +71,7 @@ Rails.application.routes.draw do
   # get "celeb_question",    to: "survey#celeb_question",    as: "celeb_question"
   # post "complete_survey",  to: "survey#complete_survey",   as: "complete_survey"
 
-  post "open_webhook", to: "mailgun#open_webhook", as: "open_webhook"
+  post "webhook", to: "mailgun#webhook", as: "webhook"
 
   get "sitemap.xml", to: "sitemap#show", format: "xml", as: "sitemap"
 end
