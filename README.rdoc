@@ -28,18 +28,18 @@ Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
 
 ==Follow on Pinterest
-var users = $(".Module.User.draggable.gridItem");
-$.each(users, function() {
-  $this = $(this);
-  pins = $this.find(".userStats span:first-child").html();
-  fols = $this.find(".userStats span:nth-child(3)").html();
-  if ((parseInt(pins) > 500 || pins.indexOf("k") >= 0 || pins.indexOf("m") >= 0) && parseInt(fols) < 200) {
-    $btn = $($this.find(".Button.FollowButton.Module.UserFollowButton"));
-    if ($btn.find("span").text().trim() == "Follow") {
-      $btn.click();
+  var users = $(".Module.User.draggable.gridItem");
+  $.each(users, function() {
+    $this = $(this);
+    pins = $this.find(".userStats span:first-child").html();
+    fols = $this.find(".userStats span:nth-child(3)").html();
+    if ((parseInt(pins) > 500 || pins.indexOf("k") >= 0 || pins.indexOf("m") >= 0) && parseInt(fols) < 200) {
+      $btn = $($this.find(".Button.FollowButton.Module.UserFollowButton"));
+      if ($btn.find("span").text().trim() == "Follow") {
+        $btn.click();
+      }
     }
-  }
-});
+  });
 
 ==Unfollow On Twitter
   var cards = $('.ProfileCard-content');
